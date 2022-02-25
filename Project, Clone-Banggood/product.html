@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    #frontLine{
+        display: flex;
+        font-weight: 250;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: grey;
+        margin-top: -14px;
+        margin-left: 20px;
+    }
+    #frontLine>p{
+        margin-left: .5%;
+    }
+    #frontLine > p:last-child{
+        color: black;
+        font-weight: 400;
+        margin-left: .5%;
+    }
+    #dadda{
+        height: 700px;
+        width: 96%;
+        margin: auto;
+        border: 2px solid white;
+        display: flex;
+    }
+    #parent01{
+        height: 700px;
+        width: 40%;
+        border: 2px solid white;
+    }
+    #pChild01{
+        height: 550px;
+        width: 100%;
+        border: 2px solid white;    
+    }
+    #pChild01>img{
+        height: 100%;
+        width: 100%;
+    }
+    #pChild02{
+        display: flex;
+        height: 135px;
+        width: 100%;
+        border: 2px solid white;
+    }
+    #pChild02>div{
+        height: 92px;
+        width: 100px;
+        margin: auto;
+        margin-left: 4px;
+        border: 2px solid white;
+    }
+    #pChild02>div>img{
+        height: 100%;
+        width: 100%;
+        border-radius: 8px;
+    }
+    #pChild02>div>img:hover{
+        border: 2px solid RGB(242, 67, 48);
+        border-radius: 8px;
+    }
+    #parent02{
+        height: 700px;
+        width: 45%;
+        margin-left: 20px;
+        border: 2px solid white;
+    }
+    #parent02>p:first-child{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        margin-top: 2px;
+    }
+    #parent02>p2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: RGB(60, 66, 70);
+        margin-top: -4px;
+        white-space: pre;
+    }
+    #parent02>p2>span{
+        color: RGB(254, 110, 38);
+    }
+    #parent02>p2>i{
+        color: grey;
+        font-size: 20px;
+    }
+    #parent02>p>i{
+        font-size: 28px;
+        margin-top: 15px;
+    }
+    #parent02>p>span:first-of-type{
+        font-size: 30px;
+        font-family: arial;
+        font-weight: bold;
+    }
+    #parent02>p>span:nth-child(3){
+        text-decoration: line-through;
+        color: grey;
+        white-space: pre;
+    }
+    #parent02>p>span:nth-child(4){
+        color: RGB(254, 110, 39);
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 15px;
+        background-color: antiquewhite;
+        border-radius: 6px;
+    }
+    #parent02>p>span:nth-child(5){
+        color: RGB(65, 103, 178);
+        margin-left: 260px;
+    }
+    #parent02>div:nth-child(4){
+        background-color: RGB(255, 71, 51);
+        color: white;
+        border-left: 2px RGB(255, 71, 51) dotted;
+        border-right: 2px RGB(255, 71, 51) dotted;
+        padding-left: 2%;
+        height: 20px;
+        width: 200px;
+    }
+    #parent02>p:nth-child(5){
+        font-size: 15px;
+        color: grey;
+        margin-top: 30px;
+    }
+    #parent02>div{
+        display: flex;
+    }
+    #parent02>div>div{
+        height: 60px;
+        width: 60px;
+        border: 2px dotted white;
+        margin-left: 1%;
+        margin-top: -10px;
+    }
+    #parent02>p:nth-child(7){
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+    }
+    #parent02>span:nth-child(8){
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px solid RGB(255, 71, 51);
+        margin-left: 1%;
+        border-radius: 4px;
+    }
+    #parent02>p:nth-child(9){
+        font-size: 14px;
+        color: grey;
+    }
+    #parent02>p:nth-child(10){
+        font-weight: 550;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        white-space: pre;
+    }
+    #parent02>p:nth-child(11){
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #parent02>p:nth-child(12){
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: -30px;
+    }
+    #parent02>p:nth-child(12)>i{
+        font-size: 25px;
+        color: grey;
+    }
+    #parent02>p:nth-child(13){
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+        margin-top: -10px;
+    }
+    #parent02>div:nth-child(14)>button{
+        height: 35px;
+        width: 100px;
+        background-color: RGB(255, 71, 51);
+        /* border: 2px solid RGB(255, 71, 51); */
+        border-radius: 6px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500px;
+        text-align: center;
+        color: white;
+        margin-left: 1%;
+    }
+    #parent02>div:nth-child(14)>i{
+        /* text-align: center; */
+        white-space: pre;
+        padding-left: 20px;
+        font-size: 18px;
+    }
+    #parent02>p:nth-child(15){
+        font-size: 15px;
+        font-weight: 550;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #parent02>p:nth-child(16){
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+        margin-top: -10px;
+    }
+    #parent02>p:nth-child(17){
+        font-size: 15px;
+        font-weight: 550;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: -4px;
+    }
+    #parent02>p:nth-child(18){
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+        margin-top: -20px;
+    }
+    #parent02>p:nth-child(19){
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+        margin-top: -20px;
+    }
+    #parent03{
+        height: 700px;
+        width: 14%;
+        border: solid white 2px;
+    }
+    #parent03>p{
+        text-align: center;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #parent03>div{
+        height: 140px;
+        width: 140px;
+        border: 2px solid white;
+        margin: auto;
+    }
+    .rPrice{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin-top: 2px;
+        font-weight: 400;
+    }
+    #parent03>div>img{
+        height: 100%;
+        width: 100%;
+    }
+    #parent03>p:nth-child(8){
+        color: grey;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        padding-top: 10px;
+    }
+    #qwe{
+        display: flex;
+    }
+    #qwe>span{
+        height: 35px;
+        width: 35px;
+        border: 1px solid white;
+        display: flex;
+    }
+    #qwe>span>img{
+        height: 100%;
+        width: 100%;
+    }
+    #dadda02{
+        height: 250px;
+        width: 96%;
+        margin: auto;
+        margin-top: 10px;
+        border: 2px solid white;
+        display: flex;
+        overflow: scroll;
+    }
+    #dadda02>div{
+        height: fit-content;
+        width: 200px;
+        border: white 2px dotted;
+        margin: 8px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 550;
+        
+    }
+    #dadda02>div>p{
+        font-weight: 100;
+        font-size: 15px;
+        margin-top: 3px;
+    }
+    #dadda02>div>span{
+        font-size: 14px;
+        color: RGB(242, 67, 48);
+        margin-top: -40px;
+        margin-left: 1px;
+        border: 2px solid white;
+    }
+    #dadda02>div{
+        height: 60%;
+        width: 100%;
+        /* border: 2px black; */
+    }
+    #dadda02>div>img{
+        height: 65%;
+        width: 100%;
+    }
+    #dadda03>div:nth-child(1){
+        height: 60px;
+        width: 65%;
+        border: 2px dashed white;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #dadda03>div:nth-child(1)>span{
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 40px;
+    }
+    #dadda03>div:nth-child(1)>span:hover{
+        font-weight: bold;
+        border-bottom: 2px solid black;
+    }
+    #dadda03>div:nth-child(2){
+        height: fit-content;
+        width: 96%;
+        border: 2px dashed white;
+        margin: auto;
+        margin-top: 80px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    #dadda03>div:nth-child(2)>img{
+        margin-top: 10px;
+        margin:auto;
+        height: fit-content;
+        width: 100%;
+    }
+</style>
+<body>
+    <div id="frontLine">
+        <p> Home  ></p>
+        <p> Consumer Electronics  ></p>
+        <p> Audio & Video Devices  ></p>
+        <p> Headphones & Earphones  ></p>
+        <p>On-ear and Over-ear Headphones</p>
+    </div>
+    <div id="dadda">
+        <div id="parent01">
+            <div id="pChild01"><img src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/86/3C/865eed69-f88f-4497-8be4-e79f40083622.jpg.webp" alt="Bda-headphone"></div>
+            <div id="pChild02">
+                <div><img src="https://imgaz3.staticbg.com/thumb/list_grid/oaupload/banggood/images/2E/97/cf374e43-9681-4602-9813-dae27c1e790c.jpg.webp" alt="01"></div>
+                <div><img src="https://imgaz.staticbg.com/thumb/list_grid/oaupload/banggood/images/5B/3E/a72af477-2aff-4bb5-b9ca-3d2d3e0c7cf8.jpg.webp" alt="02"></div>
+                <div><img src="https://imgaz.staticbg.com/thumb/list_grid/oaupload/banggood/images/5B/3E/a72af477-2aff-4bb5-b9ca-3d2d3e0c7cf8.jpg.webp" alt="03"></div>
+                <div><img src="https://imgaz.staticbg.com/thumb/list_grid/oaupload/banggood/images/1D/33/25cef5fa-62b8-44cd-b675-0e150169c4aa.jpg.webp" alt="04"></div>
+                <div><img src="https://imgaz1.staticbg.com/thumb/list_grid/oaupload/banggood/images/86/3C/865eed69-f88f-4497-8be4-e79f40083622.jpg.webp" alt="05"></div>
+                <div><img src="https://imgaz3.staticbg.com/thumb/list_grid/oaupload/banggood/images/6E/49/85090ce2-5945-413f-a772-07e8b66d2948.jpg.webp" alt="06"></div>
+            </div>
+        </div>
+        <div id="parent02">
+            <p>HiFi Stereo Wireless bluetooth Headphone Headset Foldable Earphone with Mic - Black</p>
+            <p2>Brand: <u>ELEGENT</u>      <span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span><span class="fa fa-star checked"></span>    <i class="fa fa-caret-down"></i> 4.8  213 Reviews  |   4 answered questions  ID: 1303757</p2>
+            <p><i class="fa fa-inr"></i> <span>2,661.02</span> <span><i class="fa fa-inr"></i>3,054.37</span><span>-13%</span><span>Price Alert</span></p>
+            <div><i class="fa fa-inr" style="padding-top: 3px;"></i>152.76 New User Allowance</div>
+            <p>Color: Black</p>
+            <div><div><img src="https://imgaz3.staticbg.com/thumb/other_items/oaupload/banggood/images/B4/F0/a581f940-f5b9-4c67-9b2b-5c613d69f724.jpg.webp" alt="01"></div><div><img src="https://imgaz1.staticbg.com/thumb/other_items/oaupload/banggood/images/74/4E/f7185256-d623-423f-ba64-a843aa823228.jpeg.webp" alt="02"></div></div>
+            <p>Ship from: CN</p>
+            <span>CN</span>
+            <p>QTY:</p>
+            <p><input type="number" min="1" max="9" placeholder="-      +">   Restocking. It will be available soon.</p>
+            <p><b>Shipping:</b> ₹367.07</p>
+            <p>to India via Priority Direct Mail <i class="fa fa-caret-down"></i></p>
+            <p>Shipping time 12-15 business days </p>
+            <div><button>Buy Now</button><button href="./cart.html">Add to Cart</button>    <i class="fa fa-heart-o"></i> 1031</div>
+            <p>Secure Payment</p>
+            <p>Multipal Payment Options</p>
+            <p>Costumer Service Guarantee</p>
+            <p> <i class="fa fa-regular fa-tag" style="font-size: 14px;"></i> DOA Guarantee <i class="fa fa-regular fa-check" style="font-size: 14px;"></i> Missing/Wrong Items Guarantee</p>
+            <p> <i class="fa fa-regular fa-arrow-left" style="font-size: 14px;"> </i>No Reason Returns <i class="fa fa-regular fa-shield" style="font-size: 14px;"></i> Quality Guarantee</p>
+        </div>
+        <div id="parent03">
+            <p>Recommendation</p>
+            <div ><img src="https://imgaz.staticbg.com/images/oaupload/banggood/images/4D/7A/924a1e42-530b-49ed-aa89-5029157373cb.jpg.webp" alt=""></div>
+            <p class="rPrice">₹2,588.50</p>
+            <div><img src="https://imgaz1.staticbg.com/thumb/list_grid/oaupload/banggood/images/5B/3E/a72af477-2aff-4bb5-b9ca-3d2d3e0c7cf8.jpg.webp" alt=""></div>
+            <p class="rPrice">₹2,588.50</p>
+            <div><img src="https://imgaz2.staticbg.com/thumb/list_grid/oaupload/banggood/images/1D/33/25cef5fa-62b8-44cd-b675-0e150169c4aa.jpg.webp" alt=""></div>
+            <p class="rPrice">₹2,588.50</p>
+            <p>share to:</p>
+            <p id="qwe"><span><img src="https://img.icons8.com/color/48/000000/topic--v1.png"/></span> <span><img src="https://img.icons8.com/color/48/000000/facebook-new.png"/></span> <span><img src="https://img.icons8.com/doodle/48/000000/link--v1.png"/></span> <span><img src="https://img.icons8.com/color-glass/48/000000/stack-of-tweets.png"/></span> <span><img src="https://img.icons8.com/dusk/64/000000/topic.png"/></span> </p>
+        </div>
+    </div>
+    <div id="dadda02">
+        <div><img src="https://imgaz.staticbg.com/thumb/list_grid/oaupload/banggood/images/4A/48/af3e8e92-6dab-481a-997d-2c106bc741c1.jpg.webp" alt=""> ₹1,138.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz2.staticbg.com/thumb/list_grid/oaupload/banggood/images/36/DE/a8820aff-1211-4984-aa53-2d894a172415.jpg.webp" alt=""> ₹2,188.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz2.staticbg.com/thumb/list_grid/oaupload/banggood/images/B3/2D/e8291003-1766-40e8-8b3e-4df6e76bdae4.jpg.webp" alt=""> ₹6,148.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz.staticbg.com/thumb/list_grid/oaupload/banggood/images/4A/48/af3e8e92-6dab-481a-997d-2c106bc741c1.jpg.webp" alt=""> ₹1,138.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz2.staticbg.com/thumb/list_grid/oaupload/banggood/images/FB/D5/4ce5473d-b3e4-4aa4-aa1d-1b81c82d74e2.jpg.webp" alt=""> ₹3,838.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz2.staticbg.com/thumb/list_grid/oaupload/banggood/images/39/A3/537a45af-c0b6-4b31-83f5-a6794aeebc08.jpg.webp" alt=""> ₹5,198.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz3.staticbg.com/thumb/list_grid/oaupload/banggood/images/92/7D/45d6f2f6-388a-447b-a2c7-a13a5a0717e0.jpg.webp" alt=""> ₹2,539.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz2.staticbg.com/thumb/list_grid/oaupload/banggood/images/58/7E/bf1dec7f-681f-4493-addd-1a482e84569d.jpg.webp" alt=""> ₹1,138.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz.staticbg.com/thumb/list_grid/oaupload/banggood/images/29/79/3729a526-6cad-40ce-ac97-7d21670124aa.jpg.webp" alt=""> ₹9,238.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz1.staticbg.com/thumb/list_grid/oaupload/banggood/images/D1/4A/334e31c0-b0b0-490f-8d42-99a3a5106e80.jpg.webp" alt=""> ₹10,838.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz1.staticbg.com/thumb/list_grid/oaupload/banggood/images/D1/4A/334e31c0-b0b0-490f-8d42-99a3a5106e80.jpg.webp" alt=""> ₹6,038.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz1.staticbg.com/thumb/list_grid/oaupload/banggood/images/02/ED/db07a9b7-0af3-4151-a6a6-410cbb57a5db.jpg.webp" alt=""> ₹2,738.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz2.staticbg.com/thumb/list_grid/oaupload/banggood/images/6B/21/50d99094-61d1-4a5e-91a2-91ef0173d39c.jpg.webp" alt=""> ₹5,138.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz3.staticbg.com/thumb/list_grid/oaupload/banggood/images/A0/D2/281ce711-0dfd-4b41-a297-0bea580f2f72.jpg.webp" alt=""> ₹1,138.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz1.staticbg.com/thumb/list_grid/oaupload/banggood/images/D3/BB/28ebe2c2-ab0d-44ad-8e32-d13d2b353246.jpg.webp" alt=""> ₹9,148.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz1.staticbg.com/thumb/list_grid/oaupload/banggood/images/3B/C7/37c0677e-94fa-4f25-bf8e-1d61200e2ff8.jpg.webp" alt=""> ₹6,738.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz3.staticbg.com/thumb/list_grid/oaupload/banggood/images/F5/4B/f2a66a67-9f73-4a16-ad12-3d39552bdd90.jpg.webp" alt=""> ₹1,538.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz3.staticbg.com/thumb/list_grid/oaupload/banggood/images/D3/A6/e9830426-496e-482f-896a-38c9eebd561d.jpg.webp" alt=""> ₹9,138.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz1.staticbg.com/thumb/list_grid/oaupload/ser1/banggood/images/96/8B/7b91855f-8f4b-41e2-a2c4-4a9356f0a03e.jpg.webp" alt=""> ₹4,038.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz1.staticbg.com/thumb/list_grid/oaupload/ser1/banggood/images/96/8B/7b91855f-8f4b-41e2-a2c4-4a9356f0a03e.jpg.webp" alt=""> ₹9,138.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz1.staticbg.com/thumb/list_grid/oaupload/banggood/images/D4/74/19877253-a7f2-4387-982b-36177bb5e0e7.jpg.webp" alt=""> ₹9,178.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz.staticbg.com/thumb/list_grid/oaupload/banggood/images/F4/87/a3dbcfec-4a3b-4bdc-ae31-d7a05986d4f1.png.webp" alt=""> ₹10,538.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+        <div><img src="https://imgaz.staticbg.com/thumb/list_grid/oaupload/banggood/images/F4/87/a3dbcfec-4a3b-4bdc-ae31-d7a05986d4f1.png.webp" alt=""> ₹3,838.97<p>Bakeey P17 bluetooth Headphones.</p><span><span class="fa fa-star checked"></span><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"><span class="fa fa-star checked"></span></span></div>
+    </div>
+    <div id="dadda03">
+        <div><span>Overview</span><span>Reviews(218)</span><span>Q&A's</span><span>Shipment</span><span>Bulk-Order</span></div>
+        <div>Specifications:-
+            <img src="https://imgaz.staticbg.com/images/oaupload/banggood/images/D6/D4/754d34a0-eded-48d2-8de5-06317c903e5f.jpeg.webp" alt="">
+            <img src="https://imgaz.staticbg.com/images/oaupload/banggood/images/93/D3/d5ff24a2-a112-4b66-bfcd-9a6837d20122.jpg.webp" alt="">
+        </div>
+        <div></div>
+    </div>
+</body>
+</html>

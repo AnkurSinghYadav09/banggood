@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/f4946fc7dd.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+        }
+        #first-main {
+            width: 100%;
+            height: 610px;
+            /* border: 1px solid black; */
+            display: flex;
+            margin: auto;
+        }
+        .left {    
+            width: 250px;
+            height: 600px;
+            /* border: 2px dashed red; */
+            margin: 0px 10px 10px 10px;
+            border-radius: 5px;
+        }
+        .center {
+            width:885px;
+            height:555px;
+            /* border:1px dashed green; */
+            margin: 20px 10px 10px 10px;
+            border-radius: 5px;
+        }
+        .rigth {
+            width: 250px;
+            height: 555px;
+            /* border: 2px dashed red; */
+            margin: 20px 10px 10px 10px;
+            border-radius: 5px;
+        }
+        .new-user {
+            height: 200px;
+            width:100%;
+            /* border: 1px solid blue; */
+            display: flex;
+            justify-content: right;
+            background: #c21500;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffc500, #c21500);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;
+            border-radius: 5px;
+        }
+        #size {
+            height: 350px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .new-user>div {
+            height: 150px;
+            width: 115px;
+            /* border: 1px dashed black; */
+            margin: 30px 10px 0px 0px;
+            border-radius: 5px;
+        }
+        #size1 {
+            width: 100%;
+            height: 50px;
+            border-radius: 5px;
+        }
+        .inner1 {
+            width: 100px;
+            height:100px;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .price{
+            color:red;
+            margin-bottom: 5px;
+            text-align: center;
+            font-weight: 600;
+        }
+        .flash-deals {
+            display: flex;
+            /* border: 1px dashed green; */
+            height: 266px;
+            width: 100%;
+        }
+        .flash-deals>div{
+            height: 265px;
+            width: 176px;
+            /* border: 1px solid black; */
+            text-align: left;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        .heading {
+            height: 50px;
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+            margin-left: 7px;;
+        }
+        .heading2 {
+            height: 50px;
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+            margin-left: 7px;
+            margin-top: 25px;
+        }
+        .inner2 {
+            height:150px;
+            width:160px;
+            border-radius: 5px;
+            margin: 7px;
+        }
+        .discount {
+            height: 20px;
+            width: 60px;
+            /* border:1px solid red; */
+            border-radius: 5px;
+            margin-left:5px;
+            background-color: red;
+            color: white;
+        }
+        .strickedoffprice {
+            margin-left: 5px;
+            color:grey;
+            font-size: 13px;
+            text-decoration: line-through;
+        }
+        #user {
+            height: 79px;
+            width: 75px;
+            /* border: 1px solid black; */
+            border-radius: 50%;
+            background-color: aliceblue;
+            margin: auto;
+            margin-top: 50px;
+        }
+        #line {
+            height: 1px;
+            width: 225px;
+            background-color: rgb(212, 211, 211);
+            margin: auto;
+            margin-top: 70px;
+        }
+        .login-end {
+            height: 35px;
+            width: 175px;
+            /* border: 1px solid green; */
+            margin-top: 10px;
+            justify-content: space-evenly;
+            display: flex;
+        }
+        .heading1 {
+            height: 50px;
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+        }
+        #container {
+            display: flex;
+            height: 750px;
+            width: 100%;
+            margin: 5px;
+        }
+        #container>div {
+            height: 750px;
+            width:50%;
+        }
+        .deep {
+            height: 25px;
+            width: 100%;
+        }
+        .dark {
+            height: 225px;
+            width: 100%;
+            display: flex;
+        }
+        .dark>div {
+            height: 225px;
+            width: 200px;
+            border-radius: 5px;
+            /* margin-left: 10px; */
+            margin-right: 10px;
+        }
+        .inner3 {
+            height: 200px;
+            width:150px;
+            border-radius: 5px;
+        }
+        .deep1{
+            display: flex;
+        }
+        .deep1>div {
+            height: 25px;
+            width:50%;
+        }
+        .rightinside {
+            display: flex;
+            height: 320px;
+            width: 100%;
+        }
+        .rightinside>div{
+            height: 320px;
+            width: 295px;
+        }
+        .inner4 {
+            height: 230px;
+            width: 230px;
+            border-radius: 5px;
+            margin: 5px;
+        }
+        .inner5 {
+            height: 230px;
+            width: 230px;
+            border-radius: 5px;
+            margin: 5px;
+            margin-top: 50px;
+        }
+        .rightbottom {
+            height: 50px;
+            width: 100px;
+            background-color: red;
+        }
+        #navbar {
+            height: 100px;
+            width: 100%;
+            background-color: #2d2d39;
+            display: flex;
+        }
+        .logo {
+            height: 50px;
+            width: 150px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        #categories{
+            height: 40px;
+            width: 250px;
+            margin-left: 5px;
+            color: white;
+            display: flex;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        #icon {
+            height: 30px;
+            width: 30px;
+        }
+        #live {
+            height: 300px;
+            width: 100%;
+            
+            display: flex;
+        }
+        #live>div{
+            height: 300px;
+            width: 500px;
+            
+        }
+        .liveimg {
+            height: 250px;
+            width: 450px;
+            border-radius: 5px;
+            margin-left: 25px;
+        }
+        .recomend {
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(9,300px);
+            grid-gap: 15px;
+            margin-left: 10px;
+        }
+        .recomend>div{
+            border-radius: 5px;
+            background-color: white;
+        }
+        .rimg {
+            height: 200px;
+            width: 200px;
+            margin-left: 16px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        #line2 {
+            height: 1px;
+            width: 1400px;
+            background-color: rgb(189, 188, 188);
+            margin-left: 50px;
+        }
+        .end {
+            height:200px;
+            width:100%;
+            display: flex;
+            margin-top: 50px;
+        }
+        .end>div{
+            height: 200px;
+            width:300px;
+        }
+        .icon2 {
+            height: 100px;
+            width: 100%;
+        }
+        #leftnav {
+            height: 100px;
+            width: 275px;
+        }
+        #navcenter {
+            height: 100px;
+            width: 700px;
+        }
+        #navright {
+            height: 100px;
+            width: 521px;
+            display: flex;
+        }
+        #search {
+            height: 35px;
+            width: 800px;
+            border-radius: 5px;
+            border: none;
+        }
+        #nav {
+            height: 35px;
+            width: 100%;
+            margin-top: 15px;
+            display: flex;
+        }
+        #iconsearch {
+            height: 35px;
+            width: 35px;
+            background-color: #ff6e26;
+        }
+        #tiny {
+            height: 15px;
+            width: 80%;
+            font-size: 15px;
+            color: grey;
+            margin-top: 5px;
+        }
+        #navbot {
+            height: 30px;
+            width: 100%;
+            display: flex;
+        }
+        .flash {
+            height :25px;
+            width: 200px;
+            margin-top: 7px;
+            color: white;
+            font-weight: 520;
+        }
+        .mini {
+            height: 40px;
+            width: 150px;
+            margin-top: 10px;
+            margin-left: 23px;
+            display: flex;
+        }
+        .icon5 {
+            height: 40px;
+            width: 40px;
+        }
+        #sign {
+            height: 40px;
+            width: 50px;
+        }
+        #sign1 {
+            height: 15px;
+            width: 50px;
+            color: gray;
+        }
+        #sign2 {
+            height: 15px;
+            width: 50px;
+            color: white;
+        }
+        .ship {
+            height: 15px;
+            width: 100%;
+            color: grey;
+        }
+        .ship1 {
+            height: 15px;
+            width: 100px;
+            color: white;
+        }
+        .imgship {
+            height: 15px;
+            width: 20px;
+        }
+        #ship2 {
+            height: 15px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="leftnav">
+            <div><img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh-ZbQErbKgMJgSPxjqPnzQ7A2BvQ_nJnuUg&usqp=CAU"></div>
+            <div id="categories"><i class="fa-solid fa-grip-lines"></i><div id="icon"></div>CATEGORIES</div>
+        </div>
+        <div id="navcenter">
+            <div id="nav"><input type="email" placeholder="   Automobiles" id="search"><div id="iconsearch"><i class="fa-solid fa-magnifying-glass fa-2x" style="color:white"></i></div></div>
+            <div id="tiny">ipree nillkin baseaus socofy bakeey 3d printer woodworking woodworking tools</div>
+            <div id="navbot">
+                <div class="flash">FLASH DEALS</div>
+                <div class="flash">CLEARANCE SALE</div>
+                <div class="flash">TOP SELLERS</div>
+            </div>
+            <div></div>
+        </div>
+        <div id="navright">
+            <div class="mini">
+                <div class="ship">Ship to <img class="imgship" src="https://media.istockphoto.com/vectors/vector-flag-of-the-republic-of-india-proportion-23-the-national-flag-vector-id1051236720?k=20&m=1051236720&s=612x612&w=0&h=ATObRTHmTosADa9zaB2dQPn_VAQmG1XYH2x92kzc304="> English/India/USD</div>
+                <div id="ship1"></div>
+            </div>
+            <div class="mini"><div class="icon5"><i class="fa-solid fa-user fa-2x" style="color: white;"></i></div>
+        <div id="sign">
+            <div id="sign1">Hello</div>
+            <div id="sign2">Sign in</div>
+        </div></div>
+            <div class="mini"><i class="fa-solid fa-cart-arrow-down fa-2x" style="color: white;"></i></div>
+        </div>
+    </div>
+    <div id="first-main">
+        <div class="left">
+            <p>Women's Clothing</p>
+            <p>Men's Clothing</p>
+            <p>Phones & Accessories</p>
+            <p>Electronics</p>
+            <p>Tools,Industrial & Scientific</p>
+            <p>Toys Hobbies and Robot</p>
+            <p>Computer & Office</p>
+            <p>Automobiles & Motorcucles</p>
+            <p>Sports & Outdoor</p>
+            <p>Home, Garden & Furniture</p>
+            <p>Jewelry and Watches</p>
+            <p>Home Appliances</p>
+            <p>Shoes & Bags</p>
+            <p>Health & Beauty</p>
+            <p>Lights & Lighting</p>
+        </div>
+        <div class="center">
+            <img id="size" src="https://imgaz.staticbg.com/banggood/os/202202/20220221004609_989.jpg.webp">
+            <div class="new-user">
+                <div style="height:150px;width:215px;background: #c21500;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #ffc500, #c21500);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #ffc500, #c21500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                ">
+                <h3 style="color:white">New User Benefits</h3>
+            <p style="color:white">First-Order Choose One Gift</p>
+            <img id="size1" src="https://www.dontpayfull.com/at/photo.walgreens.com/gallery/75-off-photo.walgreens.com_coupon_code.jpg">
+            </div>
+                <div style="background-color:rgb(226, 226, 226)"><img class="inner1" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/C3/4A/7483b0d3-be56-4916-b19b-af32c98b0fd1.jpg.webp">
+                <p class="price">$0.00</p></div>
+                <div style="background-color:rgb(226, 226, 226)"><img class="inner1" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/F1/A3/8fd1c384-af85-4461-a2fe-9e59e4d2a2fa.jpg.webp">
+                    <p class="price">$0.00</p></div>
+                <div style="background-color:rgb(226, 226, 226)"><img class="inner1"src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/31/CA/67888895-8882-4e45-b182-12552145f0b5.jpg.webp">
+                    <p class="price">$0.00</p></div>
+                <div style="background-color:rgb(226, 226, 226)"><img class="inner1" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/54/8E/b50ec03d-9362-4680-b02d-b340aa167826.JPG.webp">
+                    <p class="price">$0.00</p></div>
+                <div style="background-color:rgb(226, 226, 226)"><img class="inner1"src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/ED/C0/5cacbc41-bb55-42ec-a9b7-8676bcb23092.jpg.webp">
+                    <p class="price">$0.00</p></div>
+            </div>
+        </div>
+        <div class="rigth">
+            <div id="user"><i class="fa-solid fa-user fa-4x" style="color:rgb(226, 224, 224);margin-left: 10px"></i></div>
+            <p style="text-align:center;font-weight:550">Welcome to Banggood</p>
+            <button style="border:none;border-radius: 50px;background-color: #ff6e26;font-size: 20px;color: white;margin-left:20px;margin-top: 15px;padding: 5px 15px">Join Us</button>
+            <button style="border-radius: 50px;font-size: 20px;margin-left: 15px;border: none;padding: 5px 15px;">Sign In</button>
+            <div id="line"></div>
+            <p style="margin-left: 10px;">Customer Service Policy</p>
+            <div class="login-end"><i class="fa-solid fa-file-invoice-dollar" style="margin: auto;"></i><p style="margin:auto;">Payment Security</p></div>
+            <div class="login-end"><i class="fa-solid fa-truck-ramp-box" style="margin: auto;"></i><p style="margin: auto;">Delivery Gurantee</p></div>
+            <div class="login-end"><i class="fa-solid fa-handshake-angle" style="margin: auto;"></i><p style="margin: auto;">Quality Gurantee</p></div>
+            <div class="login-end"><i class="fa-solid fa-dolly" style="margin: auto;"></i><p style="margin: auto;">No reason Return</p></div>
+        </div>
+        <div></div>
+    </div>
+    <div class="heading"><h2 style="margin-bottom: 275px;">Flash Deals</h2>
+    <p style="margin-right:10px">See more</p></div>
+    <div class="flash-deals">
+        <div style="background-color:rgb(226, 226, 226)"><img class="inner2" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/CF/C2/42c4e0d9-9022-4903-9296-036bfd2a7cff.jpg.webp">
+        <h4 style="margin-left:5px">$1,217.00</h4>
+    <div class="discount">17% Off</div>
+</div>
+        <div style="background-color:rgb(226, 226, 226)"><img class="inner2" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/67/92/b9ab7ba4-ab6c-402b-8aa0-839b2d7e7ca0.jpg.webp">
+            <h4 style="margin-left:5px">$1,522.00</h4>
+        <div class="discount">60% Off</div></div>
+        <div style="background-color:rgb(226, 226, 226)"><img class="inner2" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/03/5B/bd0f503f-74c4-41a1-87d4-042339146293.jpg.webp">
+            <h4 style="margin-left:5px">$1,293.00</h4>
+        <div class="discount">37% Off</div></div>
+        <div style="background-color:rgb(226, 226, 226)"><img class="inner2" src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/BA/8E/4572731c-ff1f-4a86-bf74-4f754ef0a06e.jpg.webp">
+            <h4 style="margin-left:5px">$4,416.00</h4>
+        <div class="discount">64% Off</div></div>
+        <div style="background-color:rgb(226, 226, 226)"><img class="inner2" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/F9/0D/ef7c2531-409c-4869-a743-e3671df2a73d.jpg.webp">
+            <h4 style="margin-left:5px">$1,370.00</h4>
+        <div class="discount">55% Off</div></div>
+        <div style="background-color:rgb(226, 226, 226)"><img class="inner2" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/EF/76/95ad690e-0780-420f-9a8c-19c15e98fe27.jpg.webp">
+            <h4 style="margin-left:5px">$3,045.00</h4>
+        <div class="discount">39% Off</div></div>
+        <div style="background-color:rgb(226, 226, 226)"><img class="inner2" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/58/66/c960ce6c-aa3e-4bfe-84a7-2a2cfb0418fb.jpg.webp">
+            <h4 style="margin-left:5px">$2,055.00</h4>
+        <div class="discount">34% Off</div></div>
+        <div style="background-color:rgb(226, 226, 226)"><img class="inner2" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/2F/9D/81b01679-a62d-4b47-a090-e5bfb0c489fb.jpg.webp">
+            <h4 style="margin-left:5px">$2,055.42</h4>
+        <div class="discount">49% Off</div></div>
+    </div>
+    <div class="heading"><h2 style="margin-bottom: 275px;">New Arrivals</h2>
+        <p style="margin-right:10px">See more</p></div>
+        <div class="flash-deals">
+            <div style="background-color:rgb(226, 226, 226)"><img class="inner2" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/BF/6E/e61b7766-277b-4693-88c8-41be80b8ac35.png.webp">
+            <h4 style="margin-left:5px">$4,492.38</h4>
+            <p class="strickedoffprice">$9,899.37</p>
+    </div>
+            <div style="background-color:rgb(226, 226, 226)"><img class="inner2" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/6D/87/311e1099-7c1d-4470-9d47-0d2049d9b878.jpg.webp">
+                <h4 style="margin-left:5px">$9,138.59</h4>
+                <p class="strickedoffprice">$11,498.62</p></div>
+            <div style="background-color:rgb(226, 226, 226)"><img class="inner2" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/EE/FD/abf48e60-f73b-4e97-980d-16334239844b.jpg.webp">
+                <h4 style="margin-left:5px">$2,283.88</h4>
+                <p class="strickedoffprice">$3,502.36</p></div>
+            <div style="background-color:rgb(226, 226, 226)"><img class="inner2" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/67/AA/8b4208dd-d3b9-4cea-9a74-997658c1eeea.jpg.webp">
+                <h4 style="margin-left:5px">$1,674.65</h4>
+                <p class="strickedoffprice">$1,979.27</p></div>
+            <div style="background-color:rgb(226, 226, 226)"><img class="inner2" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/6C/E2/f8f8c6ae-446c-40db-aed5-439ced568455.jpg.webp">
+                <h4 style="margin-left:5px">$1,750.00</h4>
+                <p class="strickedoffprice">$5,330.08</p></div>
+            <div style="background-color:rgb(226, 226, 226)"><img class="inner2" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/1A/E8/82c70ea3-bd4b-4492-b449-f98c867d9cde.jpg.webp">
+                <h4 style="margin-left:5px">$684.63</h4>
+                <p class="strickedoffprice">$2,283.88</p></div>
+            <div style="background-color:rgb(226, 226, 226)"><img class="inner2" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/32/83/fe953408-9e6f-4b95-88e3-8a47f3f4bf8c.jpg.webp">
+                <h4 style="margin-left:5px">$3,806.00</h4>
+                <p class="strickedoffprice">$7,614.73</p></div>
+            <div style="background-color:rgb(226, 226, 226)"><img class="inner2" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/E4/6E/2cc93279-e461-447e-a980-4645252c1a6f.jpg.webp">
+                <h4 style="margin-left:5px">$21,094.14</h4>
+            <p class="strickedoffprice">$23988.02</p></div>
+        </div>
+        <div class="heading"><h2 style="margin-left: 5px;font-size: 20px;">Hot Categories</h2>
+</div>
+        <div id="container">
+            <div class="insidecontainer">
+            <div class="deep">Consumer Electronics</div>
+            <div class="dark">
+                <div><img class="inner3"src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/B0/CD/a1c0e16c-f216-4307-afd1-fd228520d752.jpg.webp"></div>
+                <div><img class="inner3" src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/B8/2A/cb7a6730-d55f-4c3a-8e32-b275de31da12.jpg.webp"></div>
+                <div><img class="inner3" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/BA/8E/4572731c-ff1f-4a86-bf74-4f754ef0a06e.jpg.webp"></div>
+                <div><img class="inner3" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/86/77/cd1db486-e910-4128-aa42-38e6eb9e96f0.jpg.webp"></div>
+            </div>
+            <div class="deep1">
+                <div>Computerrs & Office</div>
+                <div>Automobiles & Motorcycles</div>
+            </div>
+            <div class="dark">
+                <div><img class="inner3" src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/19/6C/f0ddca3d-f936-4b61-8f4b-001eb464cbd8.jpg.webp"></div>
+                <div><img class="inner3" src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/C8/34/af38de03-f408-493d-a24a-08cd6eecef5c.jpg.webp"></div>
+                <div><img class="inner3" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/D1/35/3e4758d2-ec55-4117-bd31-bfdf23ad2da2.jpg.webp"></div>
+                <div><img class="inner3" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/2A/1E/2285ca1f-e49d-4e8f-993b-e136d3598e18.jpg.webp"></div>
+            </div>
+            <div class="deep1">
+                <div>Tools</div>
+                <div>Men's Clothing</div>
+            </div>
+            <div class="dark">
+                <div><img class="inner3" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/89/0A/81eb80bb-15e5-4abd-8d49-1d81974d3c66.jpg.webp"></div>
+                <div><img class="inner3" src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/84/EC/9d36709b-bc66-4c30-a246-a73201ba69ec.jpg.webp"></div>
+                <div><img class="inner3" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/E0/84/dcc19552-368b-4c8a-9895-489950ad0f4e.jpg.webp"></div>
+                <div><img class="inner3" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/E9/3B/d294ca38-33f9-4679-b868-b4a33d247458.jpg.webp"></div>
+            </div>
+        </div>
+            <div class="insidecontainer"><div class="heading"><h2 style="margin-bottom: 275px;">Pre Order</h2>
+                <p style="margin-right:10px">See more</p></div>
+            <div class="rightinside">
+            <div><img class="inner4" src="https://imgaz1.staticbg.com/thumb/large/oaupload/ser1/banggood/images/A2/92/d7687a5e-6dc1-473f-b488-1b17dd5d7838.jpg.webp">
+                <h4 style="margin-left:5px">$9,138.59</h4>
+                <p class="strickedoffprice">$11,498.62</p></div>
+            <div><img class="inner4" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/4F/07/25497818-360c-4775-99ee-2b83d09abbe8.jpg.webp">
+                <h4 style="margin-left:5px">$2,126.87</h4>
+                <p class="strickedoffprice">$5,241.08</p></div>
+            <div><img class="inner4" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/82/E4/30c0d279-c86a-47f9-9d1d-df79609b515d.jpg.webp">
+                <h4 style="margin-left:5px">$3,494.19</h4>
+                <p class="strickedoffprice">$8,357.56</p></div>
+            </div>
+            <div class="heading2"><h2 style="margin-bottom: 275px;">Top Brands</h2>
+                <p style="margin-right:10px">See more</p></div>
+                <div class="rightinside">
+                    <div><img class="inner5" src="https://logos-world.net/wp-content/uploads/2020/05/Xiaomi-Symbol.jpg">
+                        </div>
+                    <div><img class="inner5" src="https://images-na.ssl-images-amazon.com/images/I/5170EcumFZL.jpg">
+                        </div>
+                    <div><img class="inner5" src="https://images.squarespace-cdn.com/content/5beb251ab40b9dd2724c2f46/1587731597573-VTRVZKDJ51KYZCCAOLEV/Syllable+S119+review+comparison+Blitzwolf+FYE8.jpg?format=1500w&content-type=image%2Fjpeg">
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="heading"><h2 style="margin-bottom: 275px;">Banggood Live</h2>
+            <p style="margin-right:10px">See more</p></div>
+            <div id="live">
+                <div><p style="margin-left:7px;">[Black Friday Sale]Free giveaways,super coupons and hot-s...</p><img class="liveimg" src="https://img.staticbg.com/banggood/infllive/20211118193706_329.jpg.webp"></div>
+                <div><p style="margin-left:5px;">[Black Friday Sale]Free giveaways and hot-selling products fashion...</p><img class="liveimg" src="https://img.staticbg.com/banggood/infllive/20211118033510_613.jpg.webp"></div>
+                <div><p style="margin-left:7px;">[Banggood 11:11 Sale] Buy for $1+ and win giveaways, don't miss...</p><img class="liveimg" src="https://img.staticbg.com/banggood/infllive/20211108052630_462.jpg.webp"></div>
+            </div>
+            <div class="heading"><h2 style="margin-bottom: 275px;">Recommendations For you</h2></div>
+                <div class="recomend">
+                    <div><img class="rimg" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/A3/50/9bdb4743-4731-45ec-a14d-58a5df4db703.jpg.webp">
+                    <h3 style="margin-left:16px">US$37.99</h3><p style="margin-left:16px;font-size: 15PX">BlitzWolf® BW-HP2 bluetooth.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/B5/73/abe46ced-c924-4508-9215-feb8c5408333.jpg.webp">
+                        <h3 style="margin-left:16px">US$23.99</h3><p style="margin-left:16px;font-size: 15PX">Bakeey I10 1.57 Inch Big.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/oaupload/ser1/banggood/images/58/CF/72f73973-140d-4d7b-9630-c305d9926327.jpg.webp">
+                        <h3 style="margin-left:16px">US$103.99</h3><p style="margin-left:16px;font-size: 15PX">Wltoys 144001 1/14 2.4G 4WD.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/4A/98/73a65263-c1c1-4f5b-bea3-7a340ac183ab.jpg.webp">
+                        <h3 style="margin-left:16px">US$59.99</h3><p style="margin-left:16px;font-size: 15PX">TOPSHAK TS-SD4 220V 240.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/B1/CC/8f039de6-fec7-42ca-9475-3c4c154d1234.jpg.webp">
+                        <h3 style="margin-left:16px">US$32.99</h3><p style="margin-left:16px;font-size: 15PX">Mens Contrast Patchwork.</p></div>
+                    <div><img class="rimg" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/AE/FA/00d7e7c0-1603-4b39-a544-2833ad8d8d88.jpg.webp">
+                        <h3 style="margin-left:16px">US$149.99</h3><p style="margin-left:16px;font-size: 15PX">OUKITEL WP5 Global Versio.</p></div>
+                    <div><img class="rimg" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/D1/35/3e4758d2-ec55-4117-bd31-bfdf23ad2da2.jpg.webp">
+                        <h3 style="margin-left:16px">US$89.99</h3><p style="margin-left:16px;font-size: 15PX">Mensela IT-PS1 Pro 220V In.</p></div>
+                    <div><img class="rimg" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/DB/57/58a97397-d637-4a41-b90a-18008161c632.jpg.webp">
+                        <h3 style="margin-left:16px">US$279.95</h3><p style="margin-left:16px;font-size: 15PX">Creality 3D® Ender-3 V2.</p></div>
+                    <div><img class="rimg" src="https://imgaz1.staticbg.com/thumb/large/oaupload/ser1/banggood/images/89/22/b302f815-10e9-4a99-987c-2aa60750e8f2.jpg.webp">
+                        <h3 style="margin-left:16px">US$32.43</h3><p style="margin-left:16px;font-size: 15PX">Ruizu D29 8G Lossless MP3.</p></div>
+                    <div><img class="rimg" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/06/F4/d313c4fb-f7bf-40de-847c-3a0803f2b3a1.jpg.webp">
+                        <h3 style="margin-left:16px">US$29.99</h3><p style="margin-left:16px;font-size: 15PX">Mens Casual Corduroy Solid.</p></div>
+                    <div><img class="rimg" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/BD/56/85e4e2f0-ec06-4aff-8a8e-455f0cb96038.jpg.webp">
+                        <h3 style="margin-left:16px">US$59.99</h3><p style="margin-left:16px;font-size: 15PX">Topshak TS-PW1 Brushless.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/35/6D/3b538ac9-5456-45a0-b98d-d87c8c87923b.jpg.webp">
+                        <h3 style="margin-left:16px">US$82.99</h3><p style="margin-left:16px;font-size: 15PX">WPL C24 1/16 2.4G 4WD.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/31/AB/526a495d-cdcc-4602-88a3-9d3796a5260a.jpg.webp">
+                        <h3 style="margin-left:16px">US$15.99</h3><p style="margin-left:16px;font-size: 15PX">MUSTOOL MT007/MT007.</p></div>
+                    <div><img class="rimg" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/67/52/ac67b6ec-76f4-4561-afd1-f743fb54f560.png.webp">
+                        <h3 style="margin-left:16px">US$56.99</h3><p style="margin-left:16px;font-size: 15PX">Gamakay MK61 Wired.</p></div>
+                    <div><img class="rimg" src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/CA/A2/293e68f5-3a27-4ee3-a166-bf3d0a89c80b.jpg.webp">
+                        <h3 style="margin-left:16px">US$697.00</h3><p style="margin-left:16px;font-size: 15PX">Anycubic® Photon Mono X.</p></div>
+                    <div><img class="rimg" src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/93/5E/286bad49-51ee-4e9f-bf40-5e2cdd34f4af.jpg.webp">
+                        <h3 style="margin-left:16px">US$16.99</h3><p style="margin-left:16px;font-size: 15PX">Waterproof Stain-Resistant.</p></div>
+                    <div><img class="rimg" src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/77/F1/48e58a51-62d3-40ca-acc6-0d9e011cda08.jpg.webp">
+                        <h3 style="margin-left:16px">US$4.40</h3><p style="margin-left:16px;font-size: 15PX">DIGOO DG-HOSA 433MHz.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/18/0F/c78eab87-d57e-4fd2-a594-6682c068aba9.jpg.webp">
+                        <h3 style="margin-left:16px">US$418.95</h3><p style="margin-left:16px;font-size: 15PX">Artillery® Sidewinder X2.</p></div>
+                    <div><img class="rimg" src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/67/E5/22493415-7e69-4c90-a3af-2620beb8070d.jpg.webp">
+                        <h3 style="margin-left:16px">US$355.99</h3><p style="margin-left:16px;font-size: 15PX">XMUND XD-T1 Treadmill.</p></div>
+                    <div><img class="rimg" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/30/B6/f6177f33-64a9-4dcc-b75a-3420f2740e83.jpg.webp">
+                        <h3 style="margin-left:16px">US$239.00</h3><p style="margin-left:16px;font-size: 15PX">Creality 3D® LD-002H UV.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/38/E4/03761ea6-8ffe-4eee-8b53-1d382ca485b3.jpg.webp">
+                        <h3 style="margin-left:16px">US$29.99</h3><p style="margin-left:16px;font-size: 15PX">Geek Customized GK61.</p></div>
+                    <div><img class="rimg" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/24/93/c21f5667-ef5c-42e9-8b2d-0a3a453c6679.jpg.webp">
+                        <h3 style="margin-left:16px">US$57.99</h3><p style="margin-left:16px;font-size: 15PX">Geek Customized GK61 .</p></div>
+                    <div><img class="rimg" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/A3/9E/9f2f232f-4b95-439c-9955-41a3dbf2c0b8.jpg.webp">
+                        <h3 style="margin-left:16px">US$329.00</h3><p style="margin-left:16px;font-size: 15PX">TWO TREES® TOTEM S 40W.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/85/A8/4f80d6ee-dfd3-46c1-96f9-f493a49ab004.jpg.webp">
+                        <h3 style="margin-left:16px">US$83.99</h3><p style="margin-left:16px;font-size: 15PX">BlitzWolf® BW-WA3 100W.</p></div>
+                    <div><img class="rimg" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/3F/6B/96f4f4d4-7f67-4589-a80a-52dabb132e06.jpg.webp">
+                        <h3 style="margin-left:16px">US$39.99</h3><p style="margin-left:16px;font-size: 15PX">ELEGIANT C520 BT 5.0 1.3.</p></div>
+                    <div><img class="rimg" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/23/02/9b85d760-1725-4221-9d13-7b0f51de4bfc.jpg.webp">
+                        <h3 style="margin-left:16px">US$21.99</h3><p style="margin-left:16px;font-size: 15PX">Stitching Design Holiday.</p></div>
+                    <div><img class="rimg" src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/18/F4/3d5b9d83-2ab4-4e1a-a8fb-8dfed6db6597.jpg.webp">
+                        <h3 style="margin-left:16px">US$229.95</h3><p style="margin-left:16px;font-size: 15PX">Creality 3D® Ender-3 3D.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/upload/2012/lidanpo/SKU092785o.JPG.webp">
+                        <h3 style="margin-left:16px">US$1.54</h3><p style="margin-left:16px;font-size: 15PX">20pcs Heat Shrink Blue.</p></div>
+                    <div><img class="rimg" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/A8/DA/68eb084c-be9a-4d9c-bee3-b52574c7dc0a.jpg.webp">
+                        <h3 style="margin-left:16px">US$15.99</h3><p style="margin-left:16px;font-size: 15PX">100% Cotton Loose Ruffles.</p></div>
+                    <div><img class="rimg" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/13/2C/385da9b2-84d7-43ba-aceb-a22385610e79.jpg.webp">
+                        <h3 style="margin-left:16px">US$38.99</h3><p style="margin-left:16px;font-size: 15PX">Mens Casual Corduroy.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/89/49/9a809716-283f-4bc8-88a2-d8bd4baa00bb.jpg.webp">
+                        <h3 style="margin-left:16px">US$46.99</h3><p style="margin-left:16px;font-size: 15PX">TOPSHAK TS-SD1 220V 130W.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/0D/16/3f5d1307-ed02-40cc-bef3-cf5dc1763a04.jpg.webp">
+                        <h3 style="margin-left:16px">US$169.99</h3><p style="margin-left:16px;font-size: 15PX">150W Solar Panel Flexible Port.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/E9/01/34dd0c72-8e35-4e3d-9edb-8a1cf39e41d0.jpg.webp">
+                        <h3 style="margin-left:16px">US$119.99</h3><p style="margin-left:16px;font-size: 15PX">OWON® HDS200 Series 2CH.</p></div>
+                    <div><img class="rimg" src="https://imgaz1.staticbg.com/thumb/large/oaupload/ser1/banggood/images/89/5B/c4c0031d-cbad-4911-a09c-e32270f83290.jpg.webp">
+                        <h3 style="margin-left:16px">US$229.99</h3><p style="margin-left:16px;font-size: 15PX">BlitzWolf® BW-PCM3 15.6.</p></div>
+                    <div><img class="rimg" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/7F/11/0a7f9896-2190-4ee2-9d41-468e5a981999.jpg.webp">
+                        <h3 style="margin-left:16px">US$168.99</h3><p style="margin-left:16px;font-size: 15PX">[US Direct] 10ft Patio.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/6B/B8/165b2fea-e12f-4fee-926f-0d73b31758a3.jpg.webp">
+                        <h3 style="margin-left:16px">US$29.99</h3><p style="margin-left:16px;font-size: 15PX">ATuMan DUKA LS-1S.</p></div>
+                    <div><img class="rimg" src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/41/60/7ec85246-e574-405a-bc27-13e224bb76ee.jpg.webp">
+                        <h3 style="margin-left:16px">US$189.99</h3><p style="margin-left:16px;font-size: 15PX">Rotatable Flash Camera.</p></div>
+                    <div><img class="rimg" src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/14/F2/c399a298-34ea-47f9-8ef1-c2cce17a5b5a.jpg.webp">
+                        <h3 style="margin-left:16px">US$69.99</h3><p style="margin-left:16px;font-size: 15PX">TOPSHAK TS-SG2 700W.</p></div>
+                    <div><img class="rimg" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/4D/A3/b8b51535-fdd8-42ba-899e-452e38bf8391.jpg.webp">
+                        <h3 style="margin-left:16px">US$1,571.99</h3><p style="margin-left:16px;font-size: 15PX">US Direct]3-4 Person.</p></div>
+                    <div><img class="rimg" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/5A/3C/6ff05382-c8fe-4593-b94d-eaebc3293feb.jpg.webp">
+                        <h3 style="margin-left:16px">US$27.99</h3><p style="margin-left:16px;font-size: 15PX">Mens Colorblock Patchwork.</p></div>
+                    <div><img class="rimg" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/31/75/9d1b1318-31a3-4f6f-8dd7-d88b325d765b.jpg.webp">
+                        <h3 style="margin-left:16px">US$149.99</h3><p style="margin-left:16px;font-size: 15PX">FNIRSI 1013D 7-inch.</p></div>
+                    <div><img class="rimg" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/8F/0A/5068fe3f-7b0d-439f-9f04-b8f01db5346b.jpg.webp">
+                        <h3 style="margin-left:16px">US$89.99</h3><p style="margin-left:16px;font-size: 15PX">[US Direct] 7.5inch Patio.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/58/A8/0a63a322-5a07-4e84-a6bf-b5e0fdfc6848.jpg.webp">
+                        <h3 style="margin-left:16px">US$59.99</h3><p style="margin-left:16px;font-size: 15PX">TOPSHAK TS-SD4 110V/220V 24.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/oaupload/ser1/banggood/images/97/C2/dbd3d89a-d6a5-4f7e-a6dc-4c241997445d.jpg.webp">
+                        <h3 style="margin-left:16px">US$679.99</h3><p style="margin-left:16px;font-size: 15PX">Original XIAOMI Curved.</p></div>
+                    <div><img class="rimg" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/27/AE/ade6717c-65ca-45dd-80a9-d76d9e247490.jpg.webp">
+                        <h3 style="margin-left:16px">US$589.99</h3><p style="margin-left:16px;font-size: 15PX">[New Version]CHUWI.</p></div>
+                    <div><img class="rimg" src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/E6/D9/8babf585-f54b-4e05-bca3-4afe687382e0.jpg.webp">
+                        <h3 style="margin-left:16px">US$28.99</h3><p style="margin-left:16px;font-size: 15PX">[Triple Dynamic] BlitzWolf®.</p></div>
+                    <div><img class="rimg" src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/B4/8D/41da7abb-aa68-43fc-b169-41191b8fb4db.jpg.webp">
+                        <h3 style="margin-left:16px">US$147.99</h3><p style="margin-left:16px;font-size: 15PX">[Face Unlock]TICWRIS MAX.</p></div>
+                    <div><img class="rimg" src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/23/45/351b39c9-a839-4d6c-9eec-db2dbc325729.jpg.webp">
+                        <h3 style="margin-left:16px">US$169.99</h3><p style="margin-left:16px;font-size: 15PX">Lenovo Snapdragon 662 Octa C.</p></div>
+                    <div><img class="rimg" src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/79/84/81fb6f5b-0749-493d-85ba-a630e3c3d4db.png.webp">
+                        <h3 style="margin-left:16px">US$199.00</h3><p style="margin-left:16px;font-size: 15PX">Artillery®Hornet 3D.</p></div>
+                    <div><img class="rimg" src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/1F/64/08a57652-ee28-448e-8886-74b13711797d.jpeg.webp">
+                        <h3 style="margin-left:16px">US$20.89</h3><p style="margin-left:16px;font-size: 15PX">FWT11 RJ11 RJ45 Telephone.</p></div>
+                    <div><img class="rimg" src="https://imgaz.staticbg.com/thumb/large/oaupload/ser1/banggood/images/D1/36/44fa440c-09f1-46dc-8073-b585880ab518.jpg.webp">
+                        <h3 style="margin-left:16px">US$19.99</h3><p style="margin-left:16px;font-size: 15PX">IPRee® IP-WB1 500ml Vacuum.</p></div>
+                    <div><img class="rimg" src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/44/FE/2da21da0-64a3-4487-acab-338bc0035e11.jpg.webp">
+                        <h3 style="margin-left:16px">US$19.99</h3><p style="margin-left:16px;font-size: 15PX">IPRee® 500ML Intelligent.</p></div>
+                    <div><img class="rimg" src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/11/F3/4e2e4cea-cda4-4579-95df-90bb666f702f.jpg.webp">
+                        <h3 style="margin-left:16px">US$49.99</h3><p style="margin-left:16px;font-size: 15PX">Mensela ED-LX2 18V.</p></div>
+                    <div><img class="rimg" src="https://imgaz1.staticbg.com/thumb/large/oaupload/ser1/banggood/images/61/EE/3681319b-f6fc-4b18-80f7-3220bb64501f.jpg.webp">
+                        <h3 style="margin-left:16px">US$209.99</h3><p style="margin-left:16px;font-size: 15PX">BlitzWolf® BW-PCM2 13.3.</p></div>
+                </div>
+                <button style="margin-left: 700px;margin-top:20px;background-color:#ff6e26;border-radius: 50px;border: none;padding: 10px 20px;color:white">Show More</button>
+                <p>Popular keywords</p>
+                <p style="color:grey;font-size: 15px;">Sleeping Bags,Hiking Shoes,Binoculars</p>
+                <div id="line2"></div>
+                <div class="end">
+                    <div><div class="icon2"><i class="fa-solid fa-clipboard-check fa-4x" style="margin-left: 115px;margin-top:25px;color: grey;"></i></div><p style="text-align: center;">Quality and Savings</p>
+                <p style="text-align: center;color: grey;font-size: 15px;">Comprehensive quality Control and affordable prices</p></div>
+                    <div><div class="icon2"><i class="fa-solid fa-warehouse fa-4x" style="margin-left: 115px;margin-top:25px;color: grey;"></i></div><p style="text-align: center;">Global Warehouse</p>
+                    <p style="text-align: center;color: grey;font-size: 15px;">37 overseas warehouses</p></div>
+                    <div><div class="icon2"><i class="fa-solid fa-cart-flatbed fa-4x" style="margin-left: 115px;margin-top:25px;color: grey;"></i></div><p style="text-align: center;">Fast and convenient logistics</p>
+                    <p style="text-align: center;color: grey;font-size: 15px;">Fast and convenient door to door delivery</p></div>
+                    <div><div class="icon2"><i class="fa-solid fa-file-invoice-dollar fa-4x" style="margin-left: 115px;margin-top:25px;color: grey;"></i></div><p style="text-align: center;">Payment Security</p>
+                    <p style="text-align: center;color: grey;font-size: 15px;">More than 40 different secure payment methods</p></div>
+                    <div><div class="icon2"><i class="fa-solid fa-headphones-simple fa-4x" style="margin-left: 115px;margin-top:25px;color: grey;"></i></div><p style="text-align: center;">Professional service and product warranty</p>
+                    <p style="text-align: center;color: grey;font-size: 15px;">24/7 Customer Service</p></div>
+                </div>
+</body>
+</html>

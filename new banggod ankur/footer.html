@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/1b67066236.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>footer</title>
+  </head>
+  <style>
+    #parent {
+      /* border: 2px solid blue; */
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: fit-content;
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+    }
+    #parent > div {
+      /* border: 2px solid black; */
+      height: fit-content;
+      width: 300px;
+    }
+    div > p {
+      color: grey;
+      font-size: 12px;
+      cursor: pointer;
+    }
+    div > p:hover {
+      text-decoration: underline;
+    }
+    div > input {
+      /* border: none; */
+      border-radius: 4px;
+      margin-top: 40px;
+      border-right: none;
+      border-left: none;
+      border-top: none;
+    }
+    div > input:hover {
+      border-bottom: 2px solid orangered;
+      border-radius: 4px;
+    }
+    .icon {
+      display: flex;
+    }
+
+    .icon > i {
+      font-size: 20px;
+      border: 2px solid;
+      border-radius: 50%;
+      padding: 5px;
+    }
+    .icon > div {
+      border: 2px solid black;
+      border-radius: 20px;
+      padding: 5px;
+      margin-left: 20px;
+    }
+    .icon > i:hover {
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <body>
+    <footer>
+      <div id="parent">
+        <!-- 1 st column -->
+        <div class="1_column">
+          <div>
+            <h4>Get to know us</h4>
+            <p>About Banggood.in</p>
+            <p>Guarantees & Return Policy</p>
+            <p>Contact Us</p>
+            <p>Contact Us</p>
+            <p>Site Map</p>
+            <p>Intellectual Property Claims</p>
+          </div>
+          <div>
+            <h4>Subscribe</h4>
+            <p style="color: black">
+              By subscribing you agree to receive email from us. Please read our
+              Privacy Policy
+            </p>
+          </div>
+          <div>
+            <input
+              style="background-color: #f0f0f0"
+              type="email"
+              placeholder="Email Address"
+            />
+          </div>
+        </div>
+        <!-- 2 nd column -->
+        <div>
+          <div>
+            <h4>Payment & Shipping</h4>
+            <p>Payment Methods</p>
+            <p>BGpay Instruction</p>
+            <p>Shipping Guide</p>
+            <p>Contact Us</p>
+            <p>Locations We Ship To</p>
+            <p>Estimated Delivery Time</p>
+          </div>
+          <div>
+            <h4>Partnership Programs</h4>
+            <p>Drop shipping</p>
+            <p>Review Club</p>
+            <p>Affiliate Program</p>
+            <p>Affiliate Program</p>
+            <p>Fashion Blogger Program</p>
+          </div>
+        </div>
+        <!-- 3 rd column -->
+        <div>
+          <div><h4>Download App</h4></div>
+          <div class="icon">
+            <i class="fa-brands fa-apple"></i
+            ><i style="margin-left: 20px" class="fa-brands fa-android"></i>
+            <div><i class="fa-solid fa-qrcode"></i>QRCODE</div>
+          </div>
+          <div>
+            <h4>Follow Us</h4>
+            <p>
+              Facebook &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; vk
+            </p>
+            <p>
+              Instagram &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              blog
+            </p>
+            <p>
+              YouTube
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              reddit
+            </p>
+            <p>
+              Twitter
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Telegram
+            </p>
+            <p>
+              Pinterest
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              TikTok
+            </p>
+          </div>
+          <div style="margin-top: 50px">
+            <p>
+              © 2006-2022 Banggood <br />
+              <b>Terms Privacy Specialized Affairs</b>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 30px;" >
+        <img style="height: 23px" src="./sprite.png" alt="" />
+      </div>
+    </footer>
+  </body>
+</html>

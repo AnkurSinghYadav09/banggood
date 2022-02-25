@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #navbar{
+           color:white;
+           text-decoration: none;
+           font-family: sans-serif;
+       }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3 ,1fr);
+            grid-template-rows: 250px;
+            gap:20px;
+            margin-bottom: 20px;
+            
+        }
+        #container>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display:flex;
+            padding-right: 10px;
+        }
+        img{
+            height:250px;
+            width:200px;
+            background: grey;
+        }
+        button{
+            border-radius: 50px;
+            background-color: #DBA27E;
+            color:white;
+            padding:7px 16px;
+           
+            border:none;
+        }
+        .button{
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        #container1{
+           display:grid;
+           grid-template-columns: repeat(6,1fr);
+           grid-template-rows:350px;
+           gap:20px
+       
+
+       }
+       #container1>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+            padding: 5px;
+            overflow: auto;
+        }
+         #container1>div>img{
+            height:70%;
+            width:100%;
+        }  
+        p{
+            font-family: sans-serif;
+            color:rgb(180, 166, 166)
+        }
+        h3{
+            color:#333333;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size:18px;font-family: sans-serif;margin-bottom: 25px;color:#999999"><b style="color:#DBA27E;font-family:sans-serif;font-size: 32px;">Ranking</b> Official, Hottest and Newest Ranking</h1>
+    <table style="width:100%; background-color: #DBA27E;height:70px;text-align: center;margin-bottom: 20px;">
+        <tr>
+           <td style="color:white"><a href="consumer_electronics1.html" id="navbar">Consumer Electronics</a></td>
+            <td style="color:white"><a href="men's_clothing.html" id="navbar">Men's Clothing</a></td>
+            <td style="color:white"><a href="women's_clothing.html" id="navbar">Women's Clothing</a></td>
+            <td style="color:white"><a href="shoes.html" id="navbar">Shoes & Bags</a></td>
+            <td style="color:white"><a href="jewelry_watch.html" id="navbar">Jewelry & Watch</a></td>
+           
+        </tr>
+    </table>
+    <p style="font-size:12px"><b style="color:black;font-size:20px">Top Seller Ranking</b>  Ranked By Orders,Sales and more</p>
+    <div id="container">
+        <div>
+           <div>
+               <img  src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/85/A8/4f80d6ee-dfd3-46c1-96f9-f493a49ab004.jpg.webp">
+           </div>
+           <div>
+            <p style="color:#333333"> BlitzWolf® BW-WA3 100W bluetooth Speaker Portable Speakers Quad Drivers Dual Diaphragm Deep Bass RGB Light TWS 5000mAh Outdoors Wireless Speaker - Black</p>
+            <h3>₹6,415.01</h3> 
+              <div>
+                <div class="button">
+                <button >shop now</button>
+              </div>
+            </div>
+           </div>
+        </div>
+        <div>
+            <div>
+                <img  src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/8F/CC/fa15bbd2-90bd-4ffd-a283-efb257ba48ba.jpg.webp">
+            </div>
+            <div>
+             <p style="color:#333333">[4 Pcs] BlitzWolf® BW-SHP15 Zigbee 3.0 16A 3680W Smart Plug Wireless Power Socket Outlet EU Plug APP Remote Control / Voice Control / Multiple Timer Modes Compatible With Amazon Alexa / Google Assistant</p>
+             <h3>₹4,429.18</h3>
+             <div>
+                <div class="button">
+                <button >shop now</button>
+              </div>
+            </div>
+            </div>
+         </div>
+         <div>
+            <div>
+                <img  src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/03/5B/bd0f503f-74c4-41a1-87d4-042339146293.jpg.webp">
+            </div>
+            <div>
+             <p style="color:#333333">Lenovo QT81 TWS bluetooth 5.0 Earphone LED Power Display 1200mAh HiFi Stereo Bass Waterproof Sport Headset Headphone with Mic - Black</p>
+             <h3>US$16.99</h3> 
+             <div>
+                <div class="button">
+                <button >shop now</button>
+              </div>
+            </div>
+            </div>
+         </div>
+    </div>
+
+    <div id="container1"></div>
+</body>
+</html>
+
+<script>
+    var electronics_items=[
+        {
+            img: "https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/C7/9F/bffaffa4-2d66-4633-bccf-2fe3677a9fa2.jpg.webp",
+            price:"₹4,581.93",
+            product_detail: "BlitzWolf® BW-AS2 40W 5200mAh Double Driver Wireless bluetooth Speaker 30W Strengthened Upward Bass",
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/ser1/banggood/images/EF/EA/d6785015-9918-41ff-8737-bc60cb73704c.jpg.webp",
+            price:"₹55,373.48",
+            product_detail:"Xiaomi Mi TV 4S 43 Inch Voice Control 5G WIFI bluetooth 4.2 4K HD Android Smart TV International - ES Version Support NetFlix Official Amazon PrimeVideo Google Assistant - EU Plug",
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/BA/8E/4572731c-ff1f-4a86-bf74-4f754ef0a06e.jpg.webp",
+            price:"₹4,429.18",
+            product_detail:"BlitzWolf® BW-ANC5 bluetooth 5.0 Headset ANC Headphone Dual Active Noise Cancelling HiFi Stereo Bass HD Calls Elegant Wireless Headset - Black",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/24/EF/d264b16d-628f-4566-bb79-f4cf5184303a.jpg.webp",
+            price:"₹2,825.23",
+            product_detail:"[Global Version]Xiaomi Mi Band 6 1.56 Inch 326 PPI AMOLED Retina Screen Wristband Heart Rate Blood Oxygen Monitor 130+ Watch Faces 30 Sports Modes 5ATM Waterproof BT5.0 Smart Watch - Black",
+
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/E6/D9/8babf585-f54b-4e05-bca3-4afe687382e0.jpg.webp",
+            price:"₹2,214.21",
+            product_detail:"[Triple Dynamic] BlitzWolf® BW-FYE15 TWS bluetooth Earphone HiFi Stereo Bass Low Latency Smart Touch HD Calls Waterproof Sports Headphone Headset - Black",
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/C3/4A/7483b0d3-be56-4916-b19b-af32c98b0fd1.jpg.webp",
+            price:"₹763.02",
+            product_detail:"BlitzWolf® BW-IS11 Wifi Wireless Smart Siren Alarm Real-time Alarm Push APP Control Work With Tuya IP Camera/PIR Motion Sensor/Door Window Sensor/Smoke Detector/Water Leak Sensor For Smart Home Alarm System",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/16/A4/60bd0fcc-2d90-4e13-b867-fe6ef5fe7af6.jpg.webp",
+            price:"₹2,214.21",
+            product_detail:"[Dual Dynamic Driver] Blitzwolf® BW-FYE7 TWS bluetooth 5.0 Earphone Heavy Bass Stereo Bilateral Calls Headphone with Charging Box - Black",
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/A8/58/78f432b6-8990-47cb-8cfc-75f99b683b85.jpg.webp",
+            price:"₹1,374.0",
+            product_detail:"New Lenovo LP40 TWS bluetooth 5.1 Earphone Wireless Earbuds HiFi Stereo Bass ENC Noise Reduction Type-C IPX5 Waterproof Sport Headphone with Mic - Black",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/B0/CD/a1c0e16c-f216-4307-afd1-fd228520d752.jpg.webp",
+            price:"₹8,859.12",
+            product_detail:"BlitzWolf® BW-SDB1 Pro 35-inch bluetooth V5.0 Soundbar with 60W Output 2.0 Channel Powerful Bass 4 Speakers Wall-mounted Design Muti-interface 360°Stereo Surround Sound - EU Plug",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/32/83/fe953408-9e6f-4b95-88e3-8a47f3f4bf8c.jpg.webp",
+            price:"₹3,818.15",
+            product_detail:"Xiaomi Redmi Smart Band Pro 1.47 AMOLED 100% NTSC 450 Nit Screen 110+ Fitness Modes Heart Rate Tracking SpO2 Measurement 5ATM Waterproof BT5.0 Smart Watch Global Version"
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/8A/8C/f99a7359-85aa-4ad7-9cf0-9c76a3858c59.jpg.webp",
+            price:"₹2,825.23",
+            product_detail:"BlitzWolf® BW-AT2 400mAh Battery Standby 24h Heart Rate Monitor Blood Pressure Oxygen Measure Wristband Custom Watch Faces Fun Small Game Sport Style Smart Watch - NO.1",
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/2E/97/cf374e43-9681-4602-9813-dae27c1e790c.jpg.webp",
+            price:"₹2,661.02",
+            product_detail:"HiFi Stereo Wireless bluetooth Headphone Headset Foldable Earphone with Mic - White",
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/E2/5D/b4898b75-169f-4167-8c6f-99055e4e7774.jpg.webp",
+            price:"₹3,818.15",
+            product_detail:"BlitzWolf® BW-AT3C 360*360px HD Screen BT Call 24h Heart Rate Blood Pressure SpO2 Monitor Female Health Management Custom Watch Faces 30 Days Standby Smart Watch - Black",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/45/DF/ed8703b0-7433-4a4b-a34f-c4742e09b369.jpg.webp",
+            price:"₹2,405.15",
+            product_detail:"PR600C 12MP 1080P Night Vision Waterproof Hunting Camera 0.8s Trigger Time Recorder Wildlife Trail Camera for Home Security and Wildlife Monitoring",
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/D6/53/baefae67-1a99-46d8-be00-bc09a5f5603c.jpg.webp",
+            price:"₹2,649.56",
+            product_detail:"BlitzWolf® BW-ANC3 bluetooth V5.0 Earphone Dual Active Noise Cancelling HiFi Stereo Bass Sports Headphone with 6 Mic HD Calls - Black",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/0A/2C/b0c20fff-efea-45c9-810c-ec2494fae7fb.jpg.webp",
+            price:"₹1,374.05",
+            product_detail:"BlitzWolf® AIRAUX AA-UM8 TWS Earphones bluetooth V5.1 HiFi Stereo Low Delay Mode Earbubs Headphones AAC Sports Headset with 500mAh Charging Box - Black",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/0E/45/5a4829d7-18b4-4234-bd0c-711d288addbe.jpg.webp",
+            price:"₹610.26",
+            product_detail:"SONOFF® Dual R2 Channel DIY WIFI Wireless APP Remote Control Switch Socket Module AC 90-250V For Smart Home",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/0D/D6/99e5ae1c-b04e-4ecd-9934-49902f974e53.jpg.webp",
+            price:"₹3,818.15",
+            product_detail:"BlitzWolf® BW-HL4 bluetooth Call Local Music Playback 24/7 Heart Rate Blood Pressure Monitor Female Health Management 300mAh Battery Customized Dial Smart Watch - NO.4",
+        },
+           
+    ]
+     
+    electronics_items.map(function(elem,index,array){
+        var div = document.createElement("div");
+
+        var avatar = document.createElement("img");
+        avatar.setAttribute("src",elem.img);
+
+        var price = document.createElement("h3");
+        price.innerText=elem.price;
+
+        var product_detail=document.createElement("p");
+        product_detail.innerText=elem.product_detail;
+
+        div.append(avatar,price,product_detail);
+        document.querySelector("#container1").append(div);
+    })
+
+</script>

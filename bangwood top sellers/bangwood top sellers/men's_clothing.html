@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #navbar{
+           color:white;
+           text-decoration: none;
+           font-family: sans-serif;
+       }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3 ,1fr);
+            grid-template-rows: 250px;
+            gap:20px;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+            
+        }
+        #container>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display:flex;
+            padding-right: 10px;
+        }
+        img{
+            height:250px;
+            width:200px;
+            background: grey;
+        }
+        button{
+            border-radius: 50px;
+            background-color: #DBA27E;
+            color:white;
+            padding:7px 16px;
+           
+            border:none;
+        }
+        .button{
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        #container1{
+           display:grid;
+           grid-template-columns: repeat(6,1fr);
+           grid-template-rows:350px;
+           gap:20px
+       
+
+       }
+       #container1>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+            padding: 5px;
+            overflow: auto;
+        }
+        #container1>div>img{
+            height:70%;
+            width:100%;
+        }
+        p{
+            font-family: sans-serif;
+            color:rgb(180, 166, 166)
+        }
+        h3{
+            color:#333333;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size:18px;font-family: sans-serif;margin-bottom: 25px;color:#999999"><b style="color:#DBA27E;font-family:sans-serif;font-size: 32px;">Ranking</b> Official, Hottest and Newest Ranking</h1>
+    <table style="width:100%; background-color: #DBA27E;height:70px;text-align: center;margin-bottom: 20px;">
+        <tr>
+           <td style="color:white"><a href="consumer_electronics1.html" id="navbar">Consumer Electronics</a></td>
+            <td style="color:white"><a href="men's_clothing.html" id="navbar">Men's Clothing</a></td>
+            <td style="color:white"><a href="women's_clothing.html" id="navbar">Women's Clothing</a></td>
+            <td style="color:white"><a href="shoes.html" id="navbar">Shoes & Bags</a></td>
+            <td style="color:white"><a href="jewelry_watch.html" id="navbar">Jewelry & Watch</a></td>
+           
+        </tr>
+    </table>
+    <p style="font-size:12px"><b style="color:black;font-size:20px">Top Seller Ranking</b>  Ranked By Orders,Sales and more</p>
+    <div id="container">
+        <div>
+           <div>
+               <img  src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/F4/13/c7b26f99-c6fa-4090-b25a-70184f1b2749.jpg.webp">
+           </div>
+           <div>
+            <p style="color:#333333">Mens Cartoon Colorful Mushroom Print Lapel Short Sleeve Shirt - Black S</p>
+            <h3>₹1,598.49</h3> 
+              <div>
+                <div class="button">
+                <button >shop now</button>
+              </div>
+            </div>
+           </div>
+        </div>
+        <div>
+            <div>
+                <img  src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/18/24/10e60679-5af3-4bd7-b7e9-7790aca81c1d.jpg.webp">
+            </div>
+            <div>
+             <p style="color:#333333">Mens Corduroy Colorblock Patchwork Casual Long Sleeve Shirts With Pocket - Green S</p>
+             <h3>₹2,055.42</h3>
+             <div>
+                <div class="button">
+                <button >shop now</button>
+              </div>
+            </div>
+            </div>
+         </div>
+         <div>
+            <div>
+                <img  src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/99/CC/35e1f23c-c6b0-4828-a14f-b94db006be8b.jpg.webp">
+            </div>
+            <div>
+             <p style="color:#333333">Mens Casual Corduroy Light Breathable Pocket Short Sleeve Shirts - Khaki S</p>
+             <h3>₹1,903.11</h3> 
+             <div>
+                <div class="button">
+                <button >shop now</button>
+              </div>
+            </div>
+            </div>
+         </div>
+    </div>
+    <div id="container1"></div>
+</body>
+</html>
+<script>
+    var electronics_items=[
+        {
+            img: "https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/11/AF/9fe69551-565c-4cb1-bbdb-a3d93722fe3f.jpg.webp",
+            price:"₹5,330.08",
+            product_detail: "Mens Single-Breasted Woolen Thick Warm Pocket Long Sleeve Business Trench Coats - S Grey",
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/5F/DE/6e09dfa0-8bfe-488f-b84f-257ec22280a8.jpg.webp",
+            price:"₹2,131.57",
+            product_detail:"Men Corduroy Colorblock Patchwork Letter Embroidered Zipper Pullover Sweatshirts - White S",
+
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/F0/B4/e0954269-1dec-4804-8e73-38ab5a3d9054.jpg.webp",
+            price:"₹1,903.11",
+            product_detail:"Mens Cotton linen Breathable Solid Color Short Sleeve Henley Shirts - White S",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/E2/0A/dcb97be1-3293-41bc-a369-c4b3d504f864.jpg.webp",
+            price:"₹2,283.88",
+            product_detail:"Men Corduroy Ethnic Spliced Chest Pocket Drawstring Casual Hooded Shirts - Coffee S",
+
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/40/B1/98b90f1e-ae1f-4c00-ae3a-025347dbe564.jpg.webp",
+            price:"₹2,131.57",
+            product_detail:"Corduroy Solid Henley Collar Chest Pocket Long Sleeve Shirts - Yellow S",
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/FE/3D/e9ddf3cd-1841-4000-bde2-d225dd4982d9.jpg.webp",
+            price:"₹2,192.50",
+            product_detail:"Mens Splicing Corduroy Button Color Block Casual Shirt - Orange M",
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/5D/3E/cf31b297-7e83-4add-8e52-34c795e3655e.jpg.webp",
+            price:"Mens Splicing Corduroy Color Block Button Casual Shirt - Blue 2XL",
+            product_detail:"Mens Splicing Corduroy Color Block Button Casual Shirt - Blue 2XL",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/10/8C/f81d7ec5-682a-4dfe-9aab-bc04326158d6.jpg.webp",
+            price:"₹1,522.34",
+            product_detail:"Mens Cartoon Container Print Turn Down Collar Short Sleeve Shirts - Yellow S",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/B1/CC/8f039de6-fec7-42ca-9475-3c4c154d1234.jpg.webp",
+            price:"₹2,512.35",
+            product_detail:"Mens Contrast Patchwork Corduroy Long Sleeve Drawstring Hooded Shirts With Pocket - S Green",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/E9/3B/d294ca38-33f9-4679-b868-b4a33d247458.jpg.webp",
+            price:"₹2,360.04",
+
+            product_detail:"Mens Corduroy Casual Long Sleeve Drawstring Hooded Shirts With Pocket - S Navy"
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/64/C4/ae1d7aec-2623-4e05-84e3-2bf30d78b178.jpg.webp",
+            price:"₹2,436.19",
+            product_detail:"Mens Corduroy Patchwork Half Button Pouch Pocket Drawstring Hoodies - S White",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/5E/A0/f1a76735-4217-46a6-810d-117ad5f663c5.jpg.webp",
+            price:"₹4,644.69",
+            product_detail:"Mens Woolen Single-Breasted Flat Collar Casual Long Trench Coats With Flap Pocket - S Black",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/01/E7/34b7e825-f198-43c1-845c-61899d59289b.jpg.webp",
+            price:"₹1,826.96",
+
+            product_detail:"Mens Corduroy Color Block Patchwork Lapel Pocket Long Sleeve Shirts - Blue S",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/46/0D/ac7844b4-3bb8-4846-9b2e-45fb2e3a98ad.jpg.webp",
+            price:"₹1,293.87",
+            product_detail:"Men Cotton Floral Print Turn Down Collar Hawaii Holiady Short Sleeve Shirts - Green S",
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/20/E0/31e4bfbe-c926-433a-9f6e-e56bf9b674ce.jpeg.webp",
+            price:"₹2,055.42",
+            product_detail:"Mens Cotton Floral Oil Printing Turn Down Collar Short Sleeve Shirts - Yellow S",
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/55/2F/1db5b84f-c0a4-41a9-b908-03a89df1d1c5.jpg.webp",
+            price:"₹2,131.57",
+
+            product_detail:"Mens Corduroy Solid Color Drawstring Mid Waist Elastic Cuff Jogger Pants - Blue S",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/13/96/9a8f26a0-a543-4ce1-840a-948900d108fc.jpg.webp",
+            price:"₹2,512.35",
+            product_detail:"Mens Vintage Corduroy Warm Elastic Waist Thick Casual Pants - 3XL Blue",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/E9/36/65c582aa-8e68-48d5-9bfc-95b35715a80a.jpeg.webp",
+            price:"₹1,674.65",
+            product_detail:"Mens Casual Flower Print Short Sleeve Shirts - White M",
+        },
+           
+    ]
+     
+    electronics_items.map(function(elem,index,array){
+        var div = document.createElement("div");
+
+        var avatar = document.createElement("img");
+        avatar.setAttribute("src",elem.img);
+
+        var price = document.createElement("h3");
+        price.innerText=elem.price;
+
+        var product_detail=document.createElement("p");
+        product_detail.innerText=elem.product_detail;
+
+        div.append(avatar,price,product_detail);
+        document.querySelector("#container1").append(div);
+    })
+
+</script>

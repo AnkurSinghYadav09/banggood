@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #navbar{
+           color:white;
+           text-decoration: none;
+           font-family: sans-serif;
+       }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3 ,1fr);
+            grid-template-rows: 250px;
+            gap:20px;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+            
+        }
+        #container>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display:flex;
+            padding-right: 10px;
+        }
+        img{
+            height:250px;
+            width:200px;
+            background: grey;
+        }
+        button{
+            border-radius: 50px;
+            background-color: #DBA27E;
+            color:white;
+            padding:7px 16px;
+           
+            border:none;
+        }
+        .button{
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        #container1{
+           display:grid;
+           grid-template-columns: repeat(6,1fr);
+           grid-template-rows:350px;
+           gap:20px
+       
+
+       }
+       #container1>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+            padding: 5px;
+            overflow: auto;
+        }
+        #container1>div>img{
+            height:70%;
+            width:100%;
+        }
+        p{
+            font-family: sans-serif;
+            color:rgb(180, 166, 166)
+        }
+        h3{
+            color:#333333;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size:18px;font-family: sans-serif;margin-bottom: 25px;color:#999999"><b style="color:#DBA27E;font-family:sans-serif;font-size: 32px;">Ranking</b> Official, Hottest and Newest Ranking</h1>
+    <table style="width:100%; background-color: #DBA27E;height:70px;text-align: center;margin-bottom: 20px;">
+        <tr>
+           <td style="color:white"><a href="consumer_electronics1.html" id="navbar">Consumer Electronics</a></td>
+            <td style="color:white"><a href="men's_clothing.html" id="navbar">Men's Clothing</a></td>
+            <td style="color:white"><a href="women's_clothing.html" id="navbar">Women's Clothing</a></td>
+            <td style="color:white"><a href="shoes.html" id="navbar">Shoes & Bags</a></td>
+            <td style="color:white"><a href="jewelry_watch.html" id="navbar">Jewelry & Watch</a></td>
+           
+        </tr>
+    </table>
+    <p style="font-size:12px"><b style="color:black;font-size:20px">Top Seller Ranking</b>  Ranked By Orders,Sales and more</p>
+    <div id="container">
+        <div>
+           <div>
+               <img  src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/0A/0D/911ca098-5c4b-494f-ad7e-34becc3a26a0.jpg.webp">
+           </div>
+           <div>
+            <p style="color:#333333">10 Pcs Women Vintage Gift Ring Set Rhinestones Gem Knuckle Rings Jewelry - Gold</p>
+            
+            <h3>₹815.29</h3> 
+              <div>
+                <div class="button">
+                <button >shop now</button>
+              </div>
+            </div>
+           </div>
+        </div>
+        <div>
+            <div>
+                <img  src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/B9/03/bc8591df-2b2c-42d2-be60-79090d67d8c8.jpg.webp">
+            </div>
+            <div>
+             <p style="color:#333333">Deffrun Big Dial Vintage Cow Leather Bracelet Watch Decorate Small Three-Hand Men Quartz Watch - Black</p>
+             <h3>₹987.00</h3>
+           
+             <div>
+                <div class="button">
+                <button >shop now</button>
+              </div>
+            </div>
+            </div>
+         </div>
+         <div>
+            <div>
+                <img  src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/C6/FE/a3a823e3-26fb-4baf-b0a4-4197c5831998.jpg.webp">
+            </div>
+            <div>
+             <p style="color:#333333">OULM Vintage Large Dial Men Watch Multi-Time Zone Luminous Display Waterproof Quartz Watch - Black</p>
+             <h3>₹1,670.08</h3> 
+             <div>
+                <div class="button">
+                <button >shop now</button>
+              </div>
+            </div>
+            </div>
+         </div>
+    </div>
+    <div id="container1"></div>
+</body>
+</html>
+<script>
+    var electronics_items=[
+        {
+            img: "https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/14/F8/0521c84f-4f4d-4180-aeda-5e0947422aeb.jpg.webp",
+            price:"₹911.02",
+            product_detail: "Home Ultrasonic Cleaner One Click Cleaning Machine Sonic Vibrator Cleaning Machine Jewelry Glasses Watch Deep Decontamination",
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/ser1/banggood/images/3B/88/1862f256-ef9e-497e-94ea-5420d1c101ab.jpg.webp",
+            price:"₹3,623.57",
+
+            product_detail:"Forsining GMT1137 Fashion Men Watch Luminous Week Month Display Automatic Mechanical Watch - NO.1",
+
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/ser1/banggood/images/9F/A0/f941ff5d-d609-4df4-80bf-8f553bc5b2ec.jpg.webp",
+            price:"₹2,050.75",
+            product_detail:"Forsining GMT838 3D Hollow Engraving Design Luminous Display Fashion Men Automatic Mechanical Watch - NO.3",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/86/76/3fbace97-4ed5-4a42-ae37-5cb57f8d71fb.jpg.webp",
+            price:"₹448.29",
+            product_detail:"Casual Fashion Big Dial with Calendar Matte PU Leather Strap Men Wristwatch Quartz Watch - NO.2",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/76/F3/94f9ce08-8c3c-4749-a999-678d7af9f747.jpg.webp",
+            price:"₹911.02",
+            product_detail:"FNGEEN S001 Fashion Business Luminous Pointer with Calendar Date Display Steel / PU Leather Strap Waterproof Men Quartz Watch - #01",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/5A/EC/97dbf931-c102-459e-b578-8887660308fb.jpg.webp",
+            price:"₹1,214.95",
+            product_detail:"Fashion Luminous Time Display Stainless Steel Strap Men Waterproof Automatic Quartz Watch - 001",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/ser1/banggood/images/AC/09/46a96acc-2f02-4c53-b727-890db717fa1d.jpg.webp",
+            price:"₹2,333.40",
+            product_detail:"CURREN 8363 Chronograph Waterproof Men Wrist Watch Luminous Display Quartz Watch - NO.2",
+
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/D7/A1/8057f61f-54ce-4026-b4d3-7b5aa774bb18.jpg.webp",
+            price:"₹364.71",
+            product_detail:"Retro Style Pendant Necklace Luminous 12 Constellation Crescent Necklace Gift For Girl - Aries",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/14/85/de4895b9-a407-4992-a27b-717a1d5de40d.jpg.webp",
+            price:"₹1,366.91",
+            product_detail:"FNGEEN Business Large Dial Luminous with Calendar Week Display Stainless Steel Band Waterproof Men Quartz Watch - 001",
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/26/A9/ef2a81eb-f6a8-4951-a797-99523811c2a8.jpg.webp",
+            price:"₹851.76",
+
+            product_detail:"Ethnic Solid Carbon Fiber Finger Rings Vintage Red Dragon Pattern Finger Ring Jewelry For men - 12 Green Black"
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/6A/B9/0f4c670f-81c0-4057-8428-9add27d10c13.jpg.webp",
+            price:"₹1,594.86",
+            product_detail:"Business Rhombus Science Fiction Dial Waterproof Men Quartz Watch - 001",
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/A9/72/9f64b78b-be4d-49e0-a444-1dc66a9098c5.jpg.webp",
+            price:"₹683.08",
+            product_detail:"Geneva Business with Calendar Dial Stainless Steel Band Waterproof Men Quartz Watch - 001",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/ser1/banggood/images/6A/2F/1425983f-348d-4662-acdc-f39104ce350f.jpg.webp",
+            price:"₹2,236.15",
+            product_detail:"NAVIFORCE 9171 Full Steel Dual Display Watch Luminous Display Men Quartz Watch - White",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/26/35/5b946ace-fcc1-4fbc-b4ff-d4fc7b7e8ef6.jpg.webp",
+            price:"₹2,430.66",
+            product_detail:"CURREN 8314 Calendar Business Style Men Wrist Watch Date Display Quartz Watch - Khaki",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/B8/FF/4e6a06be-891e-4647-b9d7-29e98b0516bf.jpg.webp",
+            price:"₹1,898.79",
+            product_detail:"Alloy Hip Hop Luxury 2 PCS Hip-hop Chain Full Diamond Watch Bracelet Lady Quartz Watch - Gold",
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/A3/F5/d5f97e83-7928-4a8a-8800-ea0a5558b6b5.jpg.webp",
+            price:"₹583.54",
+            product_detail:"1m/40inch 990 925 Sterling Silver Wire DIY Design Handmade Jewelry Tools Accessories Bracelet - 990silver 0.5mm",
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/86/70/1a3f90ef-4e8b-4bef-a9d9-1887c4553823.jpg.webp",
+            price:"₹1,361.59",
+
+            product_detail:"SKMEI 1380 Chrono Luminous Clock Date Week Display Digital Watch - Blue",
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/A0/53/8c91ce6e-3615-4a7b-97d6-0e7f9bce1338.jpg.webp",
+            price:"₹1,746.82",
+            product_detail:"CURREN 8360 Multifunction Business Style Men Wrist Watch Luminous Display Quartz Watches - NO.5",
+        },
+           
+    ]
+     
+    electronics_items.map(function(elem,index,array){
+        var div = document.createElement("div");
+
+        var avatar = document.createElement("img");
+        avatar.setAttribute("src",elem.img);
+
+        var price = document.createElement("h3");
+        price.innerText=elem.price;
+
+        var product_detail=document.createElement("p");
+        product_detail.innerText=elem.product_detail;
+
+        div.append(avatar,price,product_detail);
+        document.querySelector("#container1").append(div);
+    })
+
+</script>

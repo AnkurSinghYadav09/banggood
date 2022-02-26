@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #navbar{
+           color:white;
+           text-decoration: none;
+           font-family: sans-serif;
+       }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3 ,1fr);
+            grid-template-rows: 250px;
+            gap:20px;
+            font-family: sans-serif;
+            /* padding-bottom: 20px; */
+            margin-bottom: 20px;
+        }
+        #container>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display:flex;
+            padding-right: 10px;
+        }
+        img{
+            height:250px;
+            width:200px;
+            background: grey;
+        }
+        button{
+            border-radius: 50px;
+            background-color: #DBA27E;
+            color:white;
+            padding:7px 16px;
+           
+            border:none;
+        }
+        .button{
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        #container1{
+           display:grid;
+           grid-template-columns: repeat(6,1fr);
+           grid-template-rows:350px;
+           gap:20px;
+         
+
+       }
+       #container1>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+             padding: 5px;
+            overflow: auto;
+        }
+        #container1>div>img{
+            height:70%;
+            width:100%;
+        } 
+        p{
+            font-family: sans-serif;
+            color:rgb(180, 166, 166)
+        }
+        h3{
+            color:#333333;
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <h1 style="font-size:18px;font-family: sans-serif;margin-bottom: 25px;color:#999999"><b style="color:#DBA27E;font-family:sans-serif;font-size: 32px;">Ranking</b> Official, Hottest and Newest Ranking</h1>
+    <table style="width:100%; background-color: #DBA27E;height:70px;text-align: center;margin-bottom: 20px;">
+        <tr>
+           <td style="color:white"><a href="consumer_electronics1.html" id="navbar">Consumer Electronics</a></td>
+            <td style="color:white"><a href="men's_clothing.html" id="navbar">Men's Clothing</a></td>
+            <td style="color:white"><a href="women's_clothing.html" id="navbar">Women's Clothing</a></td>
+            <td style="color:white"><a href="shoes.html" id="navbar">Shoes & Bags</a></td>
+            <td style="color:white"><a href="jewelry_watch.html" id="navbar">Jewelry & Watch</a></td>
+           
+        </tr>
+    </table>
+    <p style="font-size:12px"><b style="color:black;font-size:20px">Top Seller Ranking</b>  Ranked By Orders,Sales and more</p>
+    <div id="container">
+        <div>
+           <div>
+               <img  src="https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/23/88/4cfc49a5-2d52-4c9d-b416-13c88395b342.jpg.webp">
+           </div>
+           <div>
+            <p style="color:#333333">Women Lace See-through V-neck Tights Shapewear Outside Wearing Casual Bodysuit - S Black</p>
+            <h3>₹1,141.56</h3> 
+              <div>
+                <div class="button">
+                <button >shop now</button>
+              </div>
+            </div>
+           </div>
+        </div>
+        <div>
+            <div>
+                <img  src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/87/2E/9349f568-b449-43ed-b48c-2773ba7c8916.jpg.webp">
+            </div>
+            <div>
+             <p style="color:#333333">Vintage Floral Print Short Sleeve Loose Casual Maxi Dress - Beige S</p>
+             <h3>₹913.10</h3>
+             <div>
+                <div class="button">
+                <button >shop now</button>
+              </div>
+            </div>
+            </div>
+         </div>
+         <div>
+            <div>
+                <img  src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/AF/B4/fe7d82ab-7c5c-42da-ab21-5d392c4438ef.jpg.webp">
+            </div>
+            <div>
+             <p style="color:#333333">Women Triangle Halter String Backless Mesh High Waist See Through Lingerie Sets - White One Size</p>
+             <h3>₹1,141.56</h3> 
+             <div>
+                <div class="button">
+                <button >shop now</button>
+              </div>
+            </div>
+            </div>
+         </div>
+    </div>
+    <div id="container1"></div>
+</body>
+</html>
+<script>
+    var electronics_items=[
+        {
+            img: "https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/99/51/35a6ae5f-e0f9-4dcf-a627-310e983cb91b.jpg.webp",
+            price:"₹1,141.56",
+            product_detail: "Tropical Plant Print Cross Cut Out Tie Back Hawaii Style One Piece Swimsuit For Women - White 4",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/ser1/banggood/images/CE/B8/c7f10b64-6fc9-440e-b1fe-7f4d61aeb7eb.jpg.webp",
+            price:"₹1,141.56",
+            product_detail:"Women Casual Loose Printed O-Neck Half Sleeve Dress - S Navy Brand: ZANZEA",
+
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/87/7D/c587e3b4-4aad-441d-be4d-895d0b7c6035.jpg.webp",
+            price:"₹1,141.56",
+            product_detail:"Women Casual Elastic Waist Drawstring Side Pockets Pants - S Black Brand: ZANZEA",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/ser1/banggood/images/09/FF/50e76b6d-9279-4405-a249-b8d22c0e7e0e.jpg.webp",
+            price:"₹2,507.78",
+            product_detail:"Plus Size Seamless Wireless Gather Thin Bra - D 36 Black",
+
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/15/CC/f1260b9d-7bae-45c1-a71c-4cf0eac3a794.jpg.webp",
+            price:"₹1,370.03",
+            product_detail:"Women Basic Satin Button Lapel Comfy Loose Casual Long Sleeve Shirts - Yellow S",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/A7/90/dc7cfdc5-1f11-4e02-8f29-7061ddccde96.jpg.webp",
+            price:"₹913.10",
+            product_detail:"Hanging Neck Backless Lace Perspective Suspender Dress Nightgown - Purple S",
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/97/73/e7bc20ff-fb26-491e-8230-a81ab761d07f.jpg.webp",
+            price:"₹913.10",
+            product_detail:"Women Lace See Through Nightgown V-neck Patchwork Lingerie Set - White S",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/EA/6F/30399539-b208-4c8b-8a27-4e3be4256f4b.jpg.webp",
+            price:"₹1,370.03",
+            product_detail:"Women Solid Color Button Down Front O-Neck Pleated Puff Sleeve Maxi Dress With Pocket - S Black",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/ser1/banggood/images/D6/99/0ee84b4a-ee87-40e8-b9d9-24ca64a339d3.jpg.webp",
+            price:"₹1,798.78",
+            product_detail:"Women 3/4 Sleeve V Neck Button Down Tops Casual Loose Shirts Blouse - S Grey",
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/9E/92/2c8c8c4b-d5b4-48b5-99a7-3a7b46d9362f.jpg.webp",
+            price:"₹1,522.34",
+
+            product_detail:"Casual Plaid Print Lapel Button Long Sleeve Shirt Maxi Dress For Women - Navy S"
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/DD/E7/6e827639-5e2f-4e24-9747-4e2af9a5f124.jpg.webp",
+            price:"₹1,065.41",
+            product_detail:"O-Neck Floral Loose Bohemian Casual Summer Dress For Women - White S",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/50/CF/24cf8630-fd87-48d8-a01d-c1b340df16da.jpg.webp",
+            price:"₹1,750.80",
+            product_detail:"Floral Embroidery Lapel Collar Long Sleeve Button Daily Casual Maxi Shirt Dress For Women - Blue S",
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/1A/20/68101def-6fb6-4381-9a4d-50d1c1f8eff0.jpg.webp",
+            price:"₹1,954.90",
+            product_detail:"Women Vintage Striped Batwing Sleeve Baggy Blouse - 6 Blue",
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/91/92/3e0b41bd-32b2-4e62-9196-080b8551dbaa.jpg.webp",
+            price:"₹1,446.18",
+            product_detail:"Retro Women Casual Cotton Solid Color Loose Short Sleeve Dress - 6 Light Grey",
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/B0/66/1285bc25-b140-4ce3-b567-1d07f8a025f5.jpg.webp",
+            price:"₹1,370.03",
+            product_detail:"Women Cotton Solid Color Puff Sleeve Pleated Simple Maxi Dresses With Pocket - Black S",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/9D/A6/079bb14f-9712-470b-a219-e07de63bd613.jpg.webp",
+            price:"₹989.25",
+            product_detail:"Solid Color Wrap Lapel Long Sleeve Casual Shirts For Women - Black S",
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/ser1/banggood/images/B6/BA/e23463ec-fcc3-4b75-945b-c0d796ff7b39.jpg.webp",
+            price:"₹1,217.72",
+            product_detail:"Sleeveless O-neck Loose Causal Floral Print Maxi Dress - Navy M",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/80/B3/81e67f0c-3b84-4bc1-8909-fd733c0bbaac.jpg.webp",
+            price:"₹2,302.92",
+            product_detail:"Sleeveless Plaid Overalls Jumpsuits - 6 Black",
+        },
+           
+    ]
+     
+    electronics_items.map(function(elem,index,array){
+        var div = document.createElement("div");
+
+        var avatar = document.createElement("img");
+        avatar.setAttribute("src",elem.img);
+
+        var price = document.createElement("h3");
+        price.innerText=elem.price;
+
+        var product_detail=document.createElement("p");
+        product_detail.innerText=elem.product_detail;
+
+        div.append(avatar,price,product_detail);
+        document.querySelector("#container1").append(div);
+    })
+
+</script>

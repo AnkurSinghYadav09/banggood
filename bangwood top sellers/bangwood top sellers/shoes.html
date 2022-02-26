@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #navbar{
+           color:white;
+           text-decoration: none;
+           font-family: sans-serif;
+       }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3 ,1fr);
+            grid-template-rows: 250px;
+            gap:20px;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+            
+        }
+        #container>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display:flex;
+            padding-right: 10px;
+        }
+        img{
+            height:250px;
+            width:200px;
+            background: grey;
+        }
+        button{
+            border-radius: 50px;
+            background-color: #DBA27E;
+            color:white;
+            padding:7px 16px;
+           
+            border:none;
+        }
+        .button{
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        #container1{
+           display:grid;
+           grid-template-columns: repeat(6,1fr);
+           grid-template-rows:350px;
+           gap:20px;
+           /* height:fit-content; */
+       
+
+       }
+       #container1>div{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            /* display: -webkit-box;
+             -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2; */
+            padding: 5px;
+            overflow:auto;
+
+        }
+        #container1>div>img{
+            height:70%;
+            width:100%;
+        }
+        p{
+            font-family: sans-serif;
+            color:rgb(180, 166, 166);
+           
+        }
+        h3{
+            color:#333333;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size:18px;font-family: sans-serif;margin-bottom: 25px;color:#999999"><b style="color:#DBA27E;font-family:sans-serif;font-size: 32px;">Ranking</b> Official, Hottest and Newest Ranking</h1>
+    <table style="width:100%; background-color: #DBA27E;height:70px;text-align: center;margin-bottom: 20px;">
+        <tr>
+           <td style="color:white"><a href="consumer_electronics1.html" id="navbar">Consumer Electronics</a></td>
+            <td style="color:white"><a href="men's_clothing.html" id="navbar">Men's Clothing</a></td>
+            <td style="color:white"><a href="women's_clothing.html" id="navbar">Women's Clothing</a></td>
+            <td style="color:white"><a href="shoes.html" id="navbar">Shoes & Bags</a></td>
+            <td style="color:white"><a href="jewelry_watch.html" id="navbar">Jewelry & Watch</a></td>
+           
+        </tr>
+    </table>
+    <p style="font-size:12px"><b style="color:black;font-size:20px">Top Seller Ranking</b>  Ranked By Orders,Sales and more</p>
+    <div id="container">
+        <div>
+           <div>
+               <img  src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/F1/71/6ea0a33e-689f-4f77-9ffe-07cf0473e686.jpg.webp">
+           </div>
+           <div>
+            <p style="color:#333333">Bullcaptain Genuine Leather Trifold Wallet RFID Antimagnetic Vintage 11 Card Slots Coin Bag Wallet For Men - deep coffee</p>
+            
+            <h3>₹2,110.25</h3> 
+              <div>
+                <div class="button">
+                <button >shop now</button>
+              </div>
+            </div>
+           </div>
+        </div>
+        <div>
+            <div>
+                <img  src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/96/BD/eb4af02b-354e-4d68-8ebc-4f7f2d45ffd8.jpg.webp">
+            </div>
+            <div>
+             <p style="color:#333333">Men Genuine Cow Leather Waterproof Comfy Non Slip Soft Slip On Casual Oxfords - 10 Brown</p>
+             <h3>₹3,703.41 </h3>
+           
+             <div>
+                <div class="button">
+                <button >shop now</button>
+              </div>
+            </div>
+            </div>
+         </div>
+         <div>
+            <div>
+                <img  src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/5F/12/f0591c15-f613-4c60-b1f7-0a08a3716ddc.jpg.webp">
+            </div>
+            <div>
+             <p style="color:#333333">Men Non Slip Outdoor Business Casual Slip On Leather Shoes - Black 6.5</p>
+             <h3>₹3,426.21</h3> 
+             <div>
+                <div class="button">
+                <button >shop now</button>
+              </div>
+            </div>
+            </div>
+         </div>
+    </div>
+    <div id="container1"></div>
+</body>
+</html>
+<script>
+    var electronics_items=[
+        {
+            img: "https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/97/5D/279db8a7-f082-4121-b8e2-1a46103ae73d.jpg.webp",
+            price:"₹3,578.52",
+            product_detail: "Men Outdoor Microfiber Leather Non Slip Hand Stitching Ankle Boots - Brown 6.5",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/0C/8B/8f8cabb1-6f0c-413e-8437-91342303a6a2.jpg.webp",
+            price:"₹3,582.33",
+
+            product_detail:"Men Microfiber Leather Non Slip Business Casual Shoes - Blue 12",
+
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/FD/02/7c520e85-41ad-47b9-a0ce-3af94fbe014f.jpg.webp",
+            price:"₹3,654.67",
+            product_detail:"Men Hand Stitching Microfiber Soft Sole Casual Leather Shoes - Blue 6.5",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/77/91/31916a1e-a4ab-4424-bcff-f3a74c303eb2.jpg.webp",
+            price:"₹3,205.36",
+            product_detail:"Men Cowhide Leather Breathable Soft Sole Slip On Classical Casual Business Shoes - Black 6.5",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/A9/63/a37cea16-3847-4da6-be3e-a2df9543abd1.jpg.webp",
+            price:"₹2,558.80",
+            product_detail:"Men Genuine Leather RFID Anti-scanning Anti-Theft Zipper Wallet With Chain - Red",
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/9D/46/588c59af-e4a4-4359-84b8-fe9f3aaa007c.jpg.webp",
+            price:"₹3,273.90",
+            product_detail:"Menico Men Hand Stitching Microfiber Leather Soft Ankle Boots - Black 7.5",
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/92/03/dee11cbb-df73-4538-86f1-5c4087d6bed7.jpg.webp",
+            price:"₹3,654.67",
+            product_detail:"Menico Men Front Zipper Non Slip Soft Handmade Stitching Lace Up Driving Ankle Boots - Brown 12",
+
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/74/9E/13006a1e-bfc5-41cd-a707-1ba90d417f22.jpg.webp",
+            price:"₹2,969.28",
+            product_detail:"Men Microfiber Leather Hand Stitching Breathable Mesh Casual Soft Sandals - Green 12",
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/E3/4A/79529f0b-c33a-4aed-aada-2022b9a87c44.jpg.webp",
+            price:"₹4,626.41",
+            product_detail:"Menico Men Hand Stitching Leather Non-slip Anti-Collision Toe Cap Casual Ankle Boots - Black 6.5",
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/09/C0/db820da0-15bb-4f5b-985e-22b604f098f8.jpg.webp",
+            price:"₹4,644.69",
+
+            product_detail:"Menico Men Hand Stitching Leather Non Slip Soft Sole Casual Flats - Black 12"
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/B6/6A/3f43ffc5-4c10-4c9b-91de-c28700c7fc3f.jpg.webp",
+            price:"₹4,572.34",
+            product_detail:"Men Genuine Leather Soft Insole Slip Resistant Casual Business Oxfords - 10 Brown",
+        },
+        {
+            img:"https://imgaz1.staticbg.com/thumb/large/oaupload/banggood/images/1B/C1/c863b21e-8b55-474b-8fed-4b1593c0aae8.jpg.webp",
+            price:"₹2,512.35",
+            product_detail:"Large Size Men Casual Lightweight Comfy Slip On Oxfords - 14 Khaki",
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/BF/2D/eb6a01f2-0887-45c2-8919-c534e16e84e3.jpg.webp",
+            price:"₹3,654.67",
+            product_detail:"Menico Men Hand Stitching Hollow Out Leather Sandals - 11.5 Red brown",
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/46/D9/424dab7e-0afe-4d18-b41c-a703de989f16.jpeg.webp",
+            price:"₹1,558.89",
+            product_detail:"Ekphero Men Vintage Casual Genuine Leather Fanny Pack 6.3/7.2 inch Phone Bag Waist Bag Pouch Leather Belt Bag Purse - Brown L",
+        },
+        {
+            img:"https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/B4/C6/6a1bc776-1dff-4bbb-8dea-f9672e7cb9a8.jpg.webp",
+            price:"₹2,207.73",
+            product_detail:"Menico Big Size Men Hand Stitching Breathable Honeycomb Mesh Loafers Flats - 11.5 Black",
+        },
+        {
+            img:"https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/BE/B7/a660f607-7659-4467-a0ee-3e2e5b042928.jpg.webp",
+            price:"₹1,903.11",
+            product_detail:"Ekphero EDC Genuine Leather Fanny Pack Multitool Flashlight Belt Sheath With Keychain Organizer - Black",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/BA/86/501cdde5-4fe9-43f7-9f5d-1b1cb800f4fb.jpg.webp",
+            price:"₹5,370.44",
+
+            product_detail:"Men Comfortable Leather Business Lace Up Formal Shoes - 6.5 Black",
+        },
+        {
+            img:"https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/A9/0D/8b63a58c-7d8b-48c0-a33a-ba18e0cb928c.jpg.webp",
+            price:"₹3,502.36",
+            product_detail:"Men Casual Breathable Mesh Soft Bottom Hand-stitched Sandals - Black 6.5",
+        },
+           
+    ]
+     
+    electronics_items.map(function(elem,index,array){
+        var div = document.createElement("div");
+
+        var avatar = document.createElement("img");
+        avatar.setAttribute("src",elem.img);
+
+        var price = document.createElement("h3");
+        price.innerText=elem.price;
+
+        var product_detail=document.createElement("p");
+        product_detail.innerText=elem.product_detail;
+
+        div.append(avatar,price,product_detail);
+        document.querySelector("#container1").append(div);
+    })
+
+</script>

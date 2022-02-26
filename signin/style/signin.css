@@ -1,0 +1,152 @@
+#container>div{
+    display:grid;
+}
+
+#container{
+    width:100%;
+    height:max;
+}
+#reg a {
+    text-decoration: none;
+    color: teal;
+    
+  }
+  
+#navbar{
+    width: 100%;
+    height:90px;
+    margin-top: 0px;
+    background-color:white;
+}
+#title{
+    width:15%;
+    height:70px;
+    
+    margin-left: 200px;
+    margin-right: 500px;
+    margin-top: 20px;
+    
+
+}
+#img
+{
+    margin-bottom: 5px;
+    align-items: center;
+}
+#signup > div{
+    display: grid;
+}
+#wrapper{
+    width:100%;
+    height:600px;
+     background-color: rgb(240, 234, 234);
+}
+
+#footer{
+    width:100%;
+    height:300px;
+    background-color: whitesmoke;
+}
+#signup{
+    width: 30%;
+    height:450px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+ .a1{
+    font-size: 30px; padding-left:50px; padding-right:40px ;margin-top:40px ;
+    font-family: OpenSans,Arial;
+  }
+  a{
+    text-decoration: none !important;
+  }
+  .input{
+    border: 1px solid #ebebeb;
+    width: 90%;
+    padding: 10px 32px 10px 10px;
+    border-radius: 4px;
+    line-height: 20px;
+    font-family: OpenSans;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: OpenSans,Arial;
+  } 
+#sign{
+    width:50%;
+    height: 90px;
+}
+#register {
+    width:50%;
+    height:90px;
+}
+#free{
+    display:flex;
+    width: 100%;
+    height:30px;
+    
+}
+#reg{
+    display:flex;
+    width: 100%;
+    height:60px;
+}
+#details{
+    width: 100%;
+    height: 210px;
+}
+#quick{
+    width:100%;
+    height:150px;
+    
+}
+#access{
+    width:100%;
+    height: 30px;
+    padding-bottom: 40px;
+}
+p{
+    font-size: 16px;
+    text-align: center;
+    font-family: OpenSans,Arial;
+}
+#logo{
+    width:100%;
+    height:120px;
+    
+}
+.logo{
+    width:15%;
+    height: 60px;
+    
+}
+
+.fa-brands, .fab {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+    font-size: 46px !important;
+    line-height: 0 !important;
+  }
+#footer{
+    display:block;
+    width: 100%;
+    height:300px;
+    background-color: white;
+}
+#footer-links{
+    display:inline;
+    width: 100%;
+    height: 150px;
+    
+    
+}
+.links{
+    width:100%;
+    height: 20px;
+    font-family: OpenSans,Arial;
+    
+}
+
+
+

@@ -11,5 +11,6 @@ function fsubmit(event){
     };
     rUser.push(Obj);
     localStorage.setItem("registerUser",JSON.stringify(rUser))
+    alert("congrats!! YOUR ACCOUNT HAS BEEN CREATED");
 }
 

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/1b67066236.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/flash.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>men</title>
+    <style>
+      body {
+        font-size: 12px;
+        line-height: 1;
+        color: #666;
+        cursor: default;
+        font-family: sans-serif;
+        background-color: #f0f0f0;
+      }
+      #mainparent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+      }
+      .name:hover {
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .strike {
+        text-decoration: line-through;
+        margin-top: -1px;
+        /* border:2px solid */
+      }
+      .price {
+        color: #ff4733;
+        font: 700 32px/63px OpenSans;
+        font-family: sans-serif;
+        font-size: 15px;
+        margin-top: -20px;
+      }
+      .strikeSpan {
+        display: flex;
+        margin-top: -30px;
+      }
+      .off {
+        margin-left: 10px;
+      }
+      #sort {
+        margin: 20px;
+      }
+      #sorting {
+        font-size: 15px;
+        font-family: sans-serif;
+        font-weight: bolder;
+        padding: 10px 30px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sort">
+      <select onclick="sort()" id="sorting">
+        <option value="">Sort By</option>
+        <option value="all">all</option>
+        <option value="high to low">high to low</option>
+        <option value="low to high">low to high</option>
+      </select>
+    </div>
+    <!-- red floating option bar   -->
+    <div class="float-bar">
+      <div class="first-float">
+        <div>
+          <div id="font"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+          featured
+        </div>
+
+        <div>
+          <div id="font"><i class="fa-brands fa-accusoft"></i></div>
+          Snap up
+        </div>
+        <div>
+          <div id="font"><i class="fa-brands fa-ideal"></i></div>
+          deals under $30
+        </div>
+      </div>
+
+      <div id="float-list">
+        <ul class="category-list">
+          <li class="list-item"><a href="./flash_deals.html">All</a></li>
+          <li class="list-item">
+            <a href="./phones.html">Phones &amp; Accessories</a>
+          </li>
+          <li class="list-item">
+            <a href="./mensection.html">Men</a>
+          </li>
+          <li class="list-item">
+            <a href="">Toys,Hobbies &amp; Robot</a>
+          </li>
+          <li class="list-item">
+            <a href="">Electronics</a>
+          </li>
+          <li class="list-item">
+            <a href="">Shoes &amp; Bags</a>
+          </li>
+          <li class="list-item">
+            <a href="">Computers &amp; Office</a>
+          </li>
+          <li class="list-item">
+            <a href="">Lights &amp; Lighting</a>
+          </li>
+          <li class="list-item">
+            <a href="">Auto &amp; Motorcycles</a>
+          </li>
+          <li class="list-item">
+            <a href="">Tools,Industrial &amp; Scientific</a>
+          </li>
+          <li class="list-item">
+            <a href="">Women</a>
+          </li>
+          <li class="list-item">
+            <a href="">Jewelry &amp; Watches</a>
+          </li>
+          <li class="list-item">
+            <a href="">Sports &amp; Outdoors</a>
+          </li>
+          <li class="list-item">
+            <a href="">Home &amp; Garden</a>
+          </li>
+          <li class="list-item">
+            <a href="">Health &amp; Beauty</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="mainparent"></div>
+    <iframe src="./footer.html" style="height: 500px; width: 100%"></iframe>
+  </body>
+</html>
+
+<script src="./mens js/menssection.js"></script>

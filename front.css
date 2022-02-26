@@ -1,0 +1,396 @@
+ body {
+        font-family: sans-serif;
+        background-color: #f4f4f4;
+      }
+      #first-main {
+        width: 100%;
+        height: 610px;
+        /* border: 1px solid black; */
+        display: flex;
+        margin: auto;
+      }
+      .left {
+        width: 250px;
+        height: 600px;
+        /* border: 2px dashed red; */
+        margin: 0px 10px 10px 10px;
+        border-radius: 5px;
+      }
+      .center {
+        width: 885px;
+        height: 555px;
+        /* border:1px dashed green; */
+        margin: 20px 10px 10px 10px;
+        border-radius: 5px;
+      }
+      .rigth {
+        width: 250px;
+        height: 555px;
+        /* border: 2px dashed red; */
+        margin: 20px 10px 10px 10px;
+        border-radius: 5px;
+      }
+      .new-user {
+        height: 200px;
+        width: 100%;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: right;
+        background: #c21500; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #ffc500,
+          #c21500
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #ffc500,
+          #c21500
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border-radius: 5px;
+      }
+      #size {
+        height: 350px;
+        width: 100%;
+        border-radius: 5px;
+      }
+      .new-user > div {
+        height: 150px;
+        width: 115px;
+        /* border: 1px dashed black; */
+        margin: 30px 10px 0px 0px;
+        border-radius: 5px;
+      }
+      #size1 {
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+      }
+      .inner1 {
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        margin: 5px;
+      }
+      .price {
+        color: red;
+        margin-bottom: 5px;
+        text-align: center;
+        font-weight: 600;
+      }
+      .flash-deals {
+        display: flex;
+        /* border: 1px dashed green; */
+        height: 266px;
+        width: 100%;
+      }
+      .flash-deals > div {
+        height: 265px;
+        width: 176px;
+        /* border: 1px solid black; */
+        text-align: left;
+        border-radius: 5px;
+        margin-left: 10px;
+      }
+      .heading {
+        height: 50px;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        margin-left: 7px;
+      }
+      .heading2 {
+        height: 50px;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        margin-left: 7px;
+        margin-top: 25px;
+      }
+      .inner2 {
+        height: 150px;
+        width: 160px;
+        border-radius: 5px;
+        margin: 7px;
+      }
+      .discount {
+        height: 20px;
+        width: 60px;
+        /* border:1px solid red; */
+        border-radius: 5px;
+        margin-left: 5px;
+        background-color: red;
+        color: white;
+      }
+      .strickedoffprice {
+        margin-left: 5px;
+        color: grey;
+        font-size: 13px;
+        text-decoration: line-through;
+      }
+      #user {
+        height: 79px;
+        width: 75px;
+        /* border: 1px solid black; */
+        border-radius: 50%;
+        background-color: aliceblue;
+        margin: auto;
+        margin-top: 50px;
+      }
+      #line {
+        height: 1px;
+        width: 225px;
+        background-color: rgb(212, 211, 211);
+        margin: auto;
+        margin-top: 70px;
+      }
+      .login-end {
+        height: 35px;
+        width: 175px;
+        /* border: 1px solid green; */
+        margin-top: 10px;
+        justify-content: space-evenly;
+        display: flex;
+      }
+      .heading1 {
+        height: 50px;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+      }
+      #container {
+        display: flex;
+        height: 750px;
+        width: 100%;
+        margin: 5px;
+      }
+      #container > div {
+        height: 750px;
+        width: 50%;
+      }
+      .deep {
+        height: 25px;
+        width: 100%;
+      }
+      .dark {
+        height: 225px;
+        width: 100%;
+        display: flex;
+      }
+      .dark > div {
+        height: 225px;
+        width: 200px;
+        border-radius: 5px;
+        /* margin-left: 10px; */
+        margin-right: 10px;
+      }
+      .inner3 {
+        height: 200px;
+        width: 150px;
+        border-radius: 5px;
+      }
+      .deep1 {
+        display: flex;
+      }
+      .deep1 > div {
+        height: 25px;
+        width: 50%;
+      }
+      .rightinside {
+        display: flex;
+        height: 320px;
+        width: 100%;
+      }
+      .rightinside > div {
+        height: 320px;
+        width: 295px;
+      }
+      .inner4 {
+        height: 230px;
+        width: 230px;
+        border-radius: 5px;
+        margin: 5px;
+      }
+      .inner5 {
+        height: 230px;
+        width: 230px;
+        border-radius: 5px;
+        margin: 5px;
+        margin-top: 50px;
+      }
+      .rightbottom {
+        height: 50px;
+        width: 100px;
+        background-color: red;
+      }
+      #navbar {
+        height: 100px;
+        width: 100%;
+        background-color: #2d2d39;
+        display: flex;
+      }
+      .logo {
+        height: 50px;
+        width: 150px;
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+      #categories {
+        height: 40px;
+        width: 250px;
+        margin-left: 5px;
+        color: white;
+        display: flex;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+      #icon {
+        height: 30px;
+        width: 30px;
+      }
+      #live {
+        height: 300px;
+        width: 100%;
+
+        display: flex;
+      }
+      #live > div {
+        height: 300px;
+        width: 500px;
+      }
+      .liveimg {
+        height: 250px;
+        width: 450px;
+        border-radius: 5px;
+        margin-left: 25px;
+      }
+      .recomend {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(9, 300px);
+        grid-gap: 15px;
+        margin-left: 10px;
+      }
+      .recomend > div {
+        border-radius: 5px;
+        background-color: white;
+      }
+      .rimg {
+        height: 200px;
+        width: 200px;
+        margin-left: 16px;
+        margin-top: 10px;
+        border-radius: 5px;
+      }
+      #line2 {
+        height: 1px;
+        width: 1400px;
+        background-color: rgb(189, 188, 188);
+        margin-left: 50px;
+      }
+      .end {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        margin-top: 50px;
+      }
+      .end > div {
+        height: 200px;
+        width: 300px;
+      }
+      .icon2 {
+        height: 100px;
+        width: 100%;
+      }
+      #leftnav {
+        height: 100px;
+        width: 275px;
+      }
+      #navcenter {
+        height: 100px;
+        width: 700px;
+      }
+      #navright {
+        height: 100px;
+        width: 521px;
+        display: flex;
+      }
+      #search {
+        height: 35px;
+        width: 800px;
+        border-radius: 5px;
+        border: none;
+      }
+      #nav {
+        height: 35px;
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+      }
+      #iconsearch {
+        height: 35px;
+        width: 35px;
+        background-color: #ff6e26;
+      }
+      #tiny {
+        height: 15px;
+        width: 80%;
+        font-size: 15px;
+        color: grey;
+        margin-top: 5px;
+      }
+      #navbot {
+        height: 30px;
+        width: 100%;
+        display: flex;
+      }
+      .flash {
+        height: 25px;
+        width: 200px;
+        margin-top: 7px;
+        color: white;
+        font-weight: 520;
+      }
+      .mini {
+        height: 40px;
+        width: 150px;
+        margin-top: 10px;
+        margin-left: 23px;
+        display: flex;
+      }
+      .icon5 {
+        height: 40px;
+        width: 40px;
+      }
+      #sign {
+        height: 40px;
+        width: 50px;
+      }
+      #sign1 {
+        height: 15px;
+        width: 50px;
+        color: gray;
+      }
+      #sign2 {
+        height: 15px;
+        width: 50px;
+        color: white;
+      }
+      .ship {
+        height: 15px;
+        width: 100%;
+        color: grey;
+      }
+      .ship1 {
+        height: 15px;
+        width: 100px;
+        color: white;
+      }
+      .imgship {
+        height: 15px;
+        width: 20px;
+      }
+      #ship2 {
+        height: 15px;
+        width: 100%;
+      }

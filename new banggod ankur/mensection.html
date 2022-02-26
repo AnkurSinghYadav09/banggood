@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      src="https://kit.fontawesome.com/1b67066236.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/flash.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +28,6 @@
         color: black;
         font-weight: bold;
         cursor: pointer;
-        
       }
       .strike {
         text-decoration: line-through;
@@ -54,10 +58,6 @@
         padding: 10px 30px;
         border-radius: 6px;
       }
-
-      #sorting:hover{
-          
-      }
     </style>
   </head>
   <body>
@@ -69,8 +69,75 @@
         <option value="low to high">low to high</option>
       </select>
     </div>
+    <!-- red floating option bar   -->
+    <div class="float-bar">
+      <div class="first-float">
+        <div>
+          <div id="font"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+          featured
+        </div>
+
+        <div>
+          <div id="font"><i class="fa-brands fa-accusoft"></i></div>
+          Snap up
+        </div>
+        <div>
+          <div id="font"><i class="fa-brands fa-ideal"></i></div>
+          deals under $30
+        </div>
+      </div>
+
+      <div id="float-list">
+        <ul class="category-list">
+          <li class="list-item"><a href="./flash_deals.html">All</a></li>
+          <li class="list-item">
+            <a href="./phones.html">Phones &amp; Accessories</a>
+          </li>
+          <li class="list-item">
+            <a href="./mensection.html">Men</a>
+          </li>
+          <li class="list-item">
+            <a href="">Toys,Hobbies &amp; Robot</a>
+          </li>
+          <li class="list-item">
+            <a href="">Electronics</a>
+          </li>
+          <li class="list-item">
+            <a href="">Shoes &amp; Bags</a>
+          </li>
+          <li class="list-item">
+            <a href="">Computers &amp; Office</a>
+          </li>
+          <li class="list-item">
+            <a href="">Lights &amp; Lighting</a>
+          </li>
+          <li class="list-item">
+            <a href="">Auto &amp; Motorcycles</a>
+          </li>
+          <li class="list-item">
+            <a href="">Tools,Industrial &amp; Scientific</a>
+          </li>
+          <li class="list-item">
+            <a href="">Women</a>
+          </li>
+          <li class="list-item">
+            <a href="">Jewelry &amp; Watches</a>
+          </li>
+          <li class="list-item">
+            <a href="">Sports &amp; Outdoors</a>
+          </li>
+          <li class="list-item">
+            <a href="">Home &amp; Garden</a>
+          </li>
+          <li class="list-item">
+            <a href="">Health &amp; Beauty</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <div id="mainparent"></div>
+    <iframe src="./footer.html" style="height: 500px; width: 100%"></iframe>
   </body>
 </html>
 
@@ -369,8 +436,6 @@
     },
   ];
 
-
-
   function sort() {
     var value = document.querySelector("#sorting").value;
     console.log(value);
@@ -445,12 +510,10 @@
 
         document.querySelector("#mainparent").append(parent);
       });
-    } else if( value=== "low to high"){
-        
+    } else if (value === "low to high") {
       mensData.sort(function (a, b) {
         return a.price - b.price;
       });
-     
 
       mensData.map(function (elem, index, array) {
         var parent = document.createElement("div");

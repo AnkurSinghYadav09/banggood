@@ -1,0 +1,185 @@
+#main
+{
+    width:100%;
+}
+body
+{
+    background-color:red;
+    font-family: OpenSans,Arial,sans-serif;
+}
+h1
+{
+    color:white;
+    text-align:center;
+    font-size: 24px;
+}
+.navbar
+{
+    height:52px;
+    width:100%;
+    background-color:white;
+    border-radius: 10px;
+    display:flex;
+    
+
+}
+.navbar>div{
+    position: relative;
+    display:flex;
+    width:100%;
+    padding:10px 20px 20px;
+    justify-content: center;
+    font-size:14px;
+}
+.navbar>div:hover
+{
+    background-color:red;
+    color:white;
+}
+div>p
+{
+    margin:3px 8px 0px;
+    font-size:14px;
+    font-size:14px;
+    text-align:center;
+}
+#container{
+    height:200px;
+    width:100%;
+    display:flex;
+    padding:10px;
+    justify-content:center;
+
+}
+#container>.prod
+{
+    width: 372px;
+    background-color:white;
+    margin:0px 12px 0px 0px;
+    border-radius:10px;
+}
+#upto1
+{
+    display:flex;
+    height:200px;
+    width:100%;
+}
+#upto1>div
+{
+    height:180px;
+    width:592px;
+    color:black;
+    background-color:white;
+    margin:0px 16px 0px 0px;
+    padding:16px 40px 16px 16px;
+    display:flex;
+    border-radius:10px;
+    justify-content: space-between;
+}
+.uptoimg
+{
+    height:180px;
+    width:180px;
+}
+#right
+{
+    width:316px;
+    height:145px;
+    padding-top:20px;
+
+}
+.upto2
+{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,320px);
+    margin:auto;
+    justify-content:center;
+    margin-top: 18px;
+    gap:10px;
+
+}
+.upto2>div 
+{
+    display: grid;
+    background-color:white;
+    border-radius:10px;
+
+}
+.descri
+{
+    margin-top:5px;
+}
+.price
+{
+    display:flex;
+    justify-content:space-between;
+    font-weight:bold;
+    width:95%;
+    margin:auto;
+}
+.image
+{
+    width:95%;
+    justify-content:center;
+    margin:auto;
+}
+#flash
+{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,320px);
+    margin:auto;
+    justify-content:center;
+    margin-top: 18px;
+    gap:10px;
+}
+#flash>div
+{
+    display: grid;
+    background-color:white;
+    border-radius:10px;
+
+}
+#toys 
+{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,350px);
+    margin:auto;
+    justify-content:center;
+    margin-top: 18px;
+    gap:10px;
+
+}
+#toys>div
+{
+    display: grid;
+    background-color:white;
+    border-radius:10px;
+
+}
+.sold
+{
+    margin:10px;
+}
+.le
+{
+    height:90%;
+    width:130px;
+    margin:10px;
+    display:flex;
+}
+.ri
+{
+    height:90%;
+    width:200px;
+    margin:10px;
+}
+.prod
+{
+    display:flex;
+}

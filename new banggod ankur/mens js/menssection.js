@@ -302,6 +302,7 @@ function sort() {
         console.log(mensData);
 
         mensData.map(function (elem, index, array) {
+            document.querySelector("#mainparent").innerHTML=null
             var parent = document.createElement("div");
             parent.style = "box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;";
             var img = document.createElement("img");
@@ -335,6 +336,7 @@ function sort() {
         });
     } else if (value === "all") {
         mensData.map(function (elem, index, array) {
+            document.querySelector("#mainparent").innerHTML = null
             var parent = document.createElement("div");
             parent.style = "box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;";
             var img = document.createElement("img");
@@ -372,6 +374,7 @@ function sort() {
         });
 
         mensData.map(function (elem, index, array) {
+            document.querySelector("#mainparent").innerHTML = null
             var parent = document.createElement("div");
             parent.style = "box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;";
             var img = document.createElement("img");
